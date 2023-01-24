@@ -6,9 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-wrapper">
-        <img class="logo" src="" alt="Логотип городка Седона">
-      </div>
+      <img class="header-sedona-logo" src="" alt="Логотип городка Седона">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -41,15 +39,12 @@
     <main class="main-index">
       <h1 class="visually-hidden">HTML Academy: Седона</h1>
       <section class="hero">
-        <div class="hero-welcome">
-          <img class="logo-welcome" src="" alt="Добро пожаловать">
-          <img class="logo-gorgeous" src="" alt="К великолепному">
-          <img class="logo-sedona" src="" alt="Седона">
-        </div>
+        <img class="hero-image-welcome" src="" alt="Добро пожаловать">
+        <img class="hero-image-gorgeous" src="" alt="К великолепному">
+        <img class="hero-image-sedona" src="" alt="Седона">
         <h2 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-
       <section class="advantages">
         <h3 class="visually-hidden">Преимущества</h3>
         <ul class="advantages-list">
@@ -77,12 +72,10 @@
           </li>
         </ul>
       </section>
-
       <section clacc="invitation">
         <h3 class="invitation-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
         <p class="invitation-description">Опытный персонал и качественное обслуживание</p>
       </section>
-
       <section class="advantages">
         <ul class="advantages-list">
           <li class="advantages-item">
@@ -102,33 +95,52 @@
           </li>
         </ul>
       </section>
-
+      <section class="search">
+        <h3 class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+        <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search-link-button" href="search-hotel-sedona.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      </section>
+      <section class="subscription">
+        <img class="subscription-picture" src="" alt="Каньоны">
+        <h3 class="subscription-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+        <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscription-form-email">
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="subscription-email"></label>
+              <input type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
+            <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
+          </form>
+        </p>
+      </section>
     </main>
-
     <footer class="page-footer">
+
       <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="footer-social-button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
+            <a class="footer-social-button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
         </ul>
       </section>
-      <section>
 
+      <section class="footer-phone">
+        <h2 class="visually-hidden">Телефон</h2>
+        <a class="" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
+      <img class="footer-htmlacademy-logo" src="" alt="Логотип HTML Academy">
     </footer>
   </body>
 </html>
