@@ -47,8 +47,24 @@ body {
     text-transform: capitalize;
 }
 
-main-index {
-    color: inherit;
-    background: inherit;
-    background-image: url("images/mountains.jpg");
+.main-index {
+    color: #000000;
+    background: #ffffff;
+}
+
+.hero {
+    color: #000000;
+    background: #ffffff url("../images/mountains.jpg") no-repeat;
+    background-size: 100% auto;
+}
+
+.advantages-list {
+    text-align: center;
+}
+
+.advantage-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
