@@ -180,6 +180,7 @@ body {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -192,9 +193,26 @@ body {
     color: #ffffff;
 }
 
+.input-email {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    background: #F2F2F2;
+}
+
+.button-subscribe {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #82B3D3;
+}
+
 .social-link-button-vk {
     text-decoration: none;
-    color: #000000;;
+    color: #000000;
     background: #ffffff url("../images/vk.svg") no-repeat;
 }
 
