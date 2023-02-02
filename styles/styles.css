@@ -61,6 +61,7 @@ body {
     text-transform: capitalize;
     color: #ffffff;
     background: #7DB54F;
+    border-radius: 10px;
 }
 
 .navigation-user-link-button {
@@ -181,7 +182,6 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
-    background: #000000;
 }
 
 .subscription-description {
@@ -190,11 +190,24 @@ body {
     font-weight: 400;
     text-align: center;
     color: #ffffff;
-    background: #000000;
 }
 
-.social-link-button {
+.social-link-button-vk {
+    text-decoration: none;
+    color: #000000;;
+    background: #ffffff url("../images/vk.svg") no-repeat;
+}
 
+.social-link-button-telegram {
+    text-decoration: none;
+    color: #000000;;
+    background: #ffffff url("../images/telegram.svg") no-repeat;
+}
+
+.social-link-button-youtube {
+    text-decoration: none;
+    color: #000000;;
+    background: #ffffff url("../images/youtube.svg") no-repeat;
 }
 
 .footer-phone-link {
