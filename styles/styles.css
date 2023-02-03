@@ -23,8 +23,7 @@ body {
 }
 
 .page-header {
-    color: #000000;
-    background: #ffffff;
+
 }
 
 .navigation-link {
@@ -34,7 +33,6 @@ body {
     text-transform: capitalize;
     text-decoration: none;
     color: #000000;
-    background: #ffffff;
 }
 
 .navigation-link-current {
@@ -44,13 +42,13 @@ body {
 .navigation-user-link-search {
     text-decoration: none;
     color: #000000;
-    background: #ffffff url("../images/search.svg") no-repeat;
+    background: url("../images/search.svg") no-repeat;
 }
 
 .navigation-user-link-heart {
     text-decoration: none;
     color: #000000;
-    background: #ffffff url("../images/heart.svg") no-repeat;
+    background: url("../images/heart.svg") no-repeat;
 }
 
 .quantity-selected {
@@ -75,46 +73,48 @@ body {
 }
 
 .main-index {
-    color: #000000;
-    background: #ffffff;
+
 }
 
 .hero {
     color: #000000;
-    background: #ffffff url("../images/mountains.jpg") no-repeat;
+    background: #82B3D3 url("../images/mountains.jpg") no-repeat;
     background-size: 100% auto;
 }
 
-.advantage-title {
+.advantages-title,
+.advantage-title,
+.search-title,
+.subscription-title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
-    background: #ffffff;
 }
 
-.advantage-title-description {
+.subscription-title-white {
+    color: #ffffff;
+}
+
+.advantages-title-description,
+.advantage-title-description,
+.search-description,
+.subscription-description {
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
     text-align: center;
     color: #333333;
-    background: #ffffff;
+}
+
+.subscription-description-white {
+    color: #ffffff;
 }
 
 .advantages-list {
     text-align: center;
-}
-
-.advantage-subtitle-white {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
-    background: #82B3D3;
 }
 
 .advantage-subtitle {
@@ -123,13 +123,9 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
-    background: #ffffff;
 }
 
-.advantage-description-white {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
+.advantage-subtitle-white {
     color: #ffffff;
     background: #82B3D3;
 }
@@ -139,58 +135,35 @@ body {
     line-height: 21px;
     font-weight: 400;
     color: #333333;
-    background: #ffffff;
 }
 
-.search-title {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-    background: #ffffff;
+.advantage-description-white {
+    color: #ffffff;
+    background: #82B3D3;
 }
 
-.search-description {
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background: #ffffff;
-}
-
-.search-link-button {
+.search-link-button,
+.subscribe-button {
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
     color: #ffffff;
+}
+
+.search-link-button-brown {
     background: #756157;
 }
 
+.subscribe-button {
+    background: #82B3D3;
+}
+
 .subscription {
-    background: #ffffff url("../images/subscribe-background.jpg") no-repeat;
-    background-size: 100% auto;
-}
-
-.subscription-title {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.subscription-description {
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-    text-align: center;
-    color: #ffffff;
+    background: #82B3D3 url("../images/subscribe-background.jpg") no-repeat;
+    background-size: 100% 415px;
 }
 
 .input-email {
@@ -200,32 +173,21 @@ body {
     background: #F2F2F2;
 }
 
-.button-subscribe {
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    background: #82B3D3;
+.social-link-button {
+    text-decoration: none;
+    color: #000000;
 }
 
 .social-link-button-vk {
-    text-decoration: none;
-    color: #000000;
-    background: #ffffff url("../images/vk.svg") no-repeat;
+    background: url("../images/vk.svg") no-repeat;
 }
 
 .social-link-button-telegram {
-    text-decoration: none;
-    color: #000000;;
-    background: #ffffff url("../images/telegram.svg") no-repeat;
+    background: url("../images/telegram.svg") no-repeat;
 }
 
 .social-link-button-youtube {
-    text-decoration: none;
-    color: #000000;;
-    background: #ffffff url("../images/youtube.svg") no-repeat;
+    background: url("../images/youtube.svg") no-repeat;
 }
 
 .footer-phone-link {
@@ -235,5 +197,4 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
-    background: #ffffff;
 }
