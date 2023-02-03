@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    background: #ffffff;
+}
+
+.page-header {
+    color: #000000;
+    background: #ffffff;
+}
+
+.navigation-link {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff;
+}
+
+.navigation-link-current {
+
+}
+
+.navigation-user-link-search {
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff url("../images/search.svg") no-repeat;
+}
+
+.navigation-user-link-heart {
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff url("../images/heart.svg") no-repeat;
+}
+
+.quantity-selected {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    background: #7DB54F;
+    border-radius: 10px;
+}
+
+.navigation-user-link-button {
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background: #756157;
+}
+
+.main-index {
+    color: #000000;
+    background: #ffffff;
+}
+
+.hero {
+    color: #000000;
+    background: #ffffff url("../images/mountains.jpg") no-repeat;
+    background-size: 100% auto;
+}
+
+.advantage-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background: #ffffff;
+}
+
+.advantage-title-description {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: #ffffff;
+}
+
+.advantages-list {
+    text-align: center;
+}
+
+.advantage-subtitle-white {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #82B3D3;
+}
+
+.advantage-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    background: #ffffff;
+}
+
+.advantage-description-white {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #82B3D3;
+}
+
+.advantage-description {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+    background: #ffffff;
+}
+
+.search-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background: #ffffff;
+}
+
+.search-description {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: #ffffff;
+}
+
+.search-link-button {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #756157;
+}
+
+.subscription {
+    background: #ffffff url("../images/subscribe-background.jpg") no-repeat;
+    background-size: 100% auto;
+}
+
+.subscription-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.subscription-description {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+}
+
+.input-email {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    background: #F2F2F2;
+}
+
+.button-subscribe {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #82B3D3;
+}
+
+.social-link-button-vk {
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff url("../images/vk.svg") no-repeat;
+}
+
+.social-link-button-telegram {
+    text-decoration: none;
+    color: #000000;;
+    background: #ffffff url("../images/telegram.svg") no-repeat;
+}
+
+.social-link-button-youtube {
+    text-decoration: none;
+    color: #000000;;
+    background: #ffffff url("../images/youtube.svg") no-repeat;
+}
+
+.footer-phone-link {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background: #ffffff;
+}
