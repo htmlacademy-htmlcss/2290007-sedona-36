@@ -130,7 +130,8 @@ body {
     background: #82B3D3;
 }
 
-.advantage-description {
+.advantage-description,
+.select-control {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
@@ -196,6 +197,7 @@ body {
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
     color: #000000;
 }
 
@@ -226,4 +228,115 @@ body {
 
 .icon-arrowtoright {
     background: url("../images/arrow-to-right.svg") no-repeat;;
+}
+
+.filter-hotel-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.filter-hotel-control {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    text-transform: none;
+    color: #ffffff;
+}
+
+.filter-hotel-button {
+    line-height: 23px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: none;
+}
+
+.button-blue {
+    background: #82B3D3;
+}
+
+.hotels-search,
+.hotels-result {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.hotel-card-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.hotel-card-description {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.hotel-price {
+    text-align: right;
+}
+
+.hotel-link-button {
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background: #756157;
+}
+
+.hotels-favorites-button {
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #82B3D3;
+}
+
+.hotel-rating {
+    line-height: 20px;
+    font-weight: 740;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    background: #F2F2F2;
+}
+
+.pagination-link {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background: #82B3D3;
+}
+
+.pagination-link-current {
+    color: #000000;
+    background: #F2F2F2;
+}
+
+.pagination-link-points {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+}
+
+.subscription-catalog {
+    background: none;
 }
