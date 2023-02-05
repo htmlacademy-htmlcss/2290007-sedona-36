@@ -80,6 +80,7 @@ body {
     color: #000000;
     background: #82B3D3 url("../images/mountains.jpg") no-repeat;
     background-size: 100% 100%;
+    min-height: 485px;
 }
 
 .advantages-title,
@@ -165,6 +166,7 @@ body {
 .subscription {
     background: #82B3D3 url("../images/subscribe-background.jpg") no-repeat;
     background-size: 100% 100%;
+    min-height: 414.86px;
 }
 
 .input-email {
@@ -208,6 +210,7 @@ body {
 .filter {
     background: #82B3D3 url("../images/filter-background.jpg") no-repeat;
     background-size: 100% 100%;
+    min-height: 412px;
 }
 
 .filter-header-title {
