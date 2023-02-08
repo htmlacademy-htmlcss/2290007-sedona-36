@@ -40,6 +40,7 @@ body {
     display: flex;
     width: 892px;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 .navigation-list {
@@ -149,6 +150,7 @@ flex-grow: 1;
 
 .advantages-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -157,6 +159,21 @@ flex-grow: 1;
 
 .advantages-item {
     width: 400px;
+}
+
+.advantages-item-wrapper {
+background: #82B3D3;
+}
+
+.advantages-item-definition,
+.advantages-item-bridge {
+    width: 100%;
+    box-sizing: border-box ;
+}
+
+.advantages-item-invitation {
+    width: 100%;
+    box-sizing: border-box ;
 }
 
 .advantage-subtitle {
@@ -169,7 +186,6 @@ flex-grow: 1;
 
 .advantage-subtitle-white {
     color: #ffffff;
-    background: #82B3D3;
 }
 
 .advantage-description,
