@@ -36,6 +36,10 @@ body {
     margin: 0 auto;
 }
 
+.header-logo {
+
+}
+
 .navigation{
     display: flex;
     width: 892px;
@@ -306,11 +310,25 @@ background: #82B3D3;
     min-height: 412px;
 }
 
+.filter-content {
+    width: 1060px;
+    margin: 0 70px;
+    padding: 0;
+}
+
 .filter-header-title {
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
     color: #ffffff;
+}
+
+.breadcrubs-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 114px;
+    list-style: none;
 }
 
 .breadcrubs-link-button {
@@ -326,11 +344,27 @@ background: #82B3D3;
     background: url("../images/arrow-to-right.svg") no-repeat;;
 }
 
+.filter-hotel {
+    width: 1060px;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-hotel-form {
+    display: flex;
+    margin: 0;
+}
+
 .filter-hotel-title {
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
     color: #ffffff;
+}
+
+.filter-hotel-list {
+    padding: 0;
+    list-style: none;
 }
 
 .filter-hotel-control {
