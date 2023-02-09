@@ -44,7 +44,7 @@
         </nav>
       </div>
     </header>
-    <main class="main-container main-inner">
+    <main class="main-inner main-container">
       <div class="page-container">
         <div class="filter">
           <section class="filter-content">
@@ -92,7 +92,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="filter-hotel-group">
+                <fieldset class="filter-hotel-group filter-hotel-group-housing-type">
                   <legend class="filter-hotel-title">Тип жилья:</legend>
                   <ul class="filter-hotel-list">
                     <li class="filter-hotel-item">
@@ -116,12 +116,14 @@
                   </ul>
                 </fieldset>
 
-                <fieldset class="filter-hotel-group">
+                <fieldset class="filter-hotel-group filter-hotel-group-price">
                   <legend class="filter-hotel-title">Стоимость, ₽:</legend>
                 </fieldset>
 
-                <button class="filter-hotel-button button-blue" type="submit">Применить</button>
-                <button class="filter-hotel-button" type="submit">Сбросить</button>
+                <div class="filter-hotel-buttons">
+                  <button class="filter-hotel-button button-blue" type="submit">Применить</button>
+                  <button class="filter-hotel-button" type="submit">Сбросить</button>
+                </div>
               </form>
             </section>
           </section>
@@ -129,9 +131,7 @@
         <section class="catalog">
           <section class="hotels-sorting">
             <h2 class="visually-hidden">Список гостиниц</h2>
-            <p class="hotels-search">Найдено гостиниц:
-              <span class="hotels-result">38</span>
-            </p>
+            <p class="hotels-search-result">Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
             </select>
@@ -197,7 +197,7 @@
                   <span class="hotel-rating">Рейтинг: 9,2</span>
                 </div>
               </li>
-              <li class="hotel-card">
+              <li class="hotel-card hotel-card-desert">
                 <a class="hotel-card-link" href="#">
                   <img src="images/hotel-3.jpg" width="300" height="212" alt="Дезерт Куэйл Инн">
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -264,15 +264,17 @@
           </ol>
         </section>
         <section class="subscription-catalog">
-          <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-          <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <p class="subscription-form-email">
-            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="subscription-email"></label>
-                <input type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
-              <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
-            </form>
-          </p>
+          <div class="subscription-catalog-container">
+            <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+            <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p class="subscription-form-email">
+              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label for="subscription-email"></label>
+                <input class="input-email" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
+                <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
+              </form>
+            </p>
+          </div>
         </section>
       </div>
     </main>
