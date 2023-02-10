@@ -14,6 +14,19 @@
     font-display: swap;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 html {
     height: 100%;
 }
@@ -30,28 +43,38 @@ body {
     background: #ffffff;
 }
 
-.page-header-container {
+.page-header {
     display: flex;
-    width: 1060px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 .header-logo {
-
+    display: flex;
+    align-items: center;
+    width: 138px;
+    margin-left: 70px;
+    margin-right: 30px;
 }
 
-.navigation{
+.navigation {
     display: flex;
     width: 892px;
-    margin: 0 auto;
+    margin: 0;
     justify-content: space-between;
 }
 
 .navigation-list {
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 339px;
+    padding: 0;
+    list-style-type: none;
 }
 
 .navigation-link {
+    display: block;
+    padding: 20px 16px;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
@@ -64,13 +87,17 @@ body {
 
 }
 
-.navigation-user-link-search {
+.navigation-user {
+    width: 268px;
+}
+
+.navigation-link-search {
     text-decoration: none;
     color: #000000;
     background: url("../images/search.svg") no-repeat;
 }
 
-.navigation-user-link-heart {
+.navigation-link-heart {
     text-decoration: none;
     color: #000000;
     background: url("../images/heart.svg") no-repeat;
@@ -87,7 +114,7 @@ body {
     border-radius: 10px;
 }
 
-.navigation-user-link-button {
+.navigation-link-button {
     line-height: 20px;
     font-weight: 700;
     text-align: center;
