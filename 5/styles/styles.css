@@ -36,10 +36,15 @@ body {
     margin: 0 auto;
 }
 
+.header-logo {
+
+}
+
 .navigation{
     display: flex;
     width: 892px;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 .navigation-list {
@@ -149,6 +154,7 @@ flex-grow: 1;
 
 .advantages-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -157,6 +163,22 @@ flex-grow: 1;
 
 .advantages-item {
     width: 400px;
+}
+
+.advantages-item-wrapper {
+background: #82B3D3;
+}
+
+.advantages-item-definition,
+.advantages-item-bridge {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box ;
+}
+
+.advantages-item-invitation {
+    width: 100%;
+    box-sizing: border-box ;
 }
 
 .advantage-subtitle {
@@ -169,11 +191,9 @@ flex-grow: 1;
 
 .advantage-subtitle-white {
     color: #ffffff;
-    background: #82B3D3;
 }
 
-.advantage-description,
-.select-control {
+.advantage-description {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
@@ -208,6 +228,8 @@ flex-grow: 1;
 
 .subscribe-button {
     background: #82B3D3;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
 }
 
 .subscription {
@@ -227,6 +249,8 @@ flex-grow: 1;
     font-weight: 400;
     color: #000000;
     background: #F2F2F2;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
 }
 
 .page-footer-container {
@@ -289,6 +313,12 @@ flex-grow: 1;
     min-height: 412px;
 }
 
+.filter-content {
+    width: 1060px;
+    margin: 0 70px;
+    padding: 0;
+}
+
 .filter-header-title {
     font-size: 60px;
     line-height: 78px;
@@ -296,9 +326,13 @@ flex-grow: 1;
     color: #ffffff;
 }
 
-.breadcrubs-link-button {
-    text-decoration: none;
-    color: #000000;
+.breadcrubs-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 114px;
+    list-style: none;
+    color: #ffffff;
 }
 
 .icon-home {
@@ -309,11 +343,42 @@ flex-grow: 1;
     background: url("../images/arrow-to-right.svg") no-repeat;;
 }
 
+.filter-hotel {
+    width: 1060px;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-hotel-form {
+    display: flex;
+    margin: 0;
+}
+
+.filter-hotel-group {
+    width: 151px;
+    margin-right: 70px;
+    padding: 0;
+    border: none;
+}
+
+.filter-hotel-group-housing-type {
+    margin-right: 140.15px;
+}
+
+.filter-hotel-group-price {
+    width: 288px;
+}
+
 .filter-hotel-title {
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
     color: #ffffff;
+}
+
+.filter-hotel-list {
+    padding: 0;
+    list-style: none;
 }
 
 .filter-hotel-control {
@@ -322,6 +387,11 @@ flex-grow: 1;
     font-weight: 400;
     text-transform: none;
     color: #ffffff;
+}
+
+.filter-hotel-buttons {
+    display: flex;
+    flex-direction: column;
 }
 
 .filter-hotel-button {
@@ -337,13 +407,50 @@ flex-grow: 1;
     background: #82B3D3;
 }
 
-.hotels-search,
-.hotels-result {
+.hotels-sorting {
+    display: flex;
+    width: 1060px;
+    margin: 0 70px;
+    padding: 0;
+}
+
+.hotels-search-result {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
+    width: 338px;
+    margin-right: 200px;
+    padding: 0;
+}
+
+.select-control {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+    width: 292px;
+    margin-right: 70px;
+    padding: 0;
+}
+
+.hotels-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1060px;
+    margin: 0 70px;
+    padding: 0;
+    list-style: none;
+}
+
+.hotel-card {
+    width: 340px;
+    margin-right: 20px;
+}
+
+.hotel-card-desert {
+    margin-right: 0;
 }
 
 .hotel-card-title {
@@ -392,6 +499,22 @@ flex-grow: 1;
     background: #F2F2F2;
 }
 
+.pagination-list {
+    display: flex;
+    width: 1060px;
+    margin: 0 70px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.pagination-item {
+    width: 60px;
+    margin-right: 8px;
+    padding: 0;
+    background: #82B3D3;
+}
+
 .pagination-link {
     font-size: 20px;
     line-height: 36px;
@@ -400,12 +523,10 @@ flex-grow: 1;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    background: #82B3D3;
 }
 
 .pagination-link-current {
     color: #000000;
-    background: #F2F2F2;
 }
 
 .pagination-link-points {
@@ -417,5 +538,13 @@ flex-grow: 1;
 }
 
 .subscription-catalog {
+    width: 100%;
+    box-sizing: border-box;
     background: none;
+}
+
+.subscription-catalog-container {
+    width: 684px;
+    margin: 0 auto;
+    padding: 0;
 }
