@@ -188,10 +188,6 @@ flex-grow: 1;
     margin: 69px 290px 25px;
 }
 
-.subscription-title-white {
-    color: #ffffff;
-}
-
 .advantages-title-description,
 .advantage-title-description,
 .search-description,
@@ -253,6 +249,13 @@ flex-grow: 1;
     background: rgba(131, 179, 211, 0.12);;
 }
 
+.icon-housing,
+.icon-food,
+.icon-souvenirs {
+    display: block;
+    margin: 81px 162.5px 30px;
+}
+
 .advantage-subtitle {
     font-size: 24px;
     line-height: 28px;
@@ -286,12 +289,6 @@ flex-grow: 1;
 .advantages-item-road {
     background: rgba(131, 179, 211, 0.2);
 }
-
-/* .search-container {
-    width: 592px;
-    margin: 0 auto;
-    padding: 0;
-} */
 
 .search-title {
     margin: 96px 451.5px 20px;
@@ -341,11 +338,20 @@ flex-grow: 1;
     min-height: 414.86px;
 }
 
-.subscription-container {
+.subscription-title-white {
+    margin: 96px 398px 20px;
+    color: #ffffff;
+}
+
+.subscription-description-white {
+    margin: 0 362px 54px;
+}
+
+/* .subscription-container {
     width: 684px;
     margin: 0 auto;
     padding: 0;
-}
+} */
 
 .input-email {
     font-size: 18px;
