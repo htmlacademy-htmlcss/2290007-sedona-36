@@ -94,13 +94,13 @@ body {
 .navigation-user {
     display: flex;
     justify-content: flex-end;
-    /* width: 268px;
-    box-sizing: border-box; */
+    min-width: 268px;
     margin: 0;
     align-items: center;
 }
 
 .navigation-user .navigation-link {
+    padding: 22px 12px;
     min-width: 20px;
     min-height: 20px;
 }
@@ -108,13 +108,13 @@ body {
 .navigation-link-search {
     text-decoration: none;
     color: #000000;
-    background: url("../images/search.svg") no-repeat;
+    background: url("../images/search.svg") no-repeat center;
 }
 
 .navigation-link-heart {
     text-decoration: none;
     color: #000000;
-    background: url("../images/heart.svg") no-repeat;
+    background: url("../images/heart.svg") no-repeat center;
 }
 
 .quantity-selected {
