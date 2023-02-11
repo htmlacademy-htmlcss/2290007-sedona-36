@@ -161,7 +161,31 @@ flex-grow: 1;
     min-height: 485px;
 }
 
-.advantages-title,
+.image-welcome-to-sedona {
+    padding: 51px 371px 25px;
+}
+
+.advantages-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    padding: 69px 290px 25px;
+}
+
+.advantages-title-description {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    margin: 0;
+    padding: 0 274.5px 90px;
+}
+
 .advantage-title,
 .search-title,
 .subscription-title {
@@ -177,7 +201,6 @@ flex-grow: 1;
     color: #ffffff;
 }
 
-.advantages-title-description,
 .advantage-title-description,
 .search-description,
 .subscription-description {
@@ -229,7 +252,9 @@ background: #82B3D3;
     color: #000000;
 }
 
-.advantage-subtitle-white {
+.advantage-subtitle-town {
+    margin: 0;
+    padding: 102px 112.5px 62px;
     color: #ffffff;
 }
 
@@ -240,7 +265,9 @@ background: #82B3D3;
     color: #333333;
 }
 
-.advantage-description-white {
+.advantage-description-town {
+    margin: 0;
+    padding: 0 85px 102px;
     color: #ffffff;
     background: #82B3D3;
 }
