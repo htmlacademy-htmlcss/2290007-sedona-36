@@ -311,7 +311,7 @@ flex-grow: 1;
 
 .subscription {
     background: #82B3D3 url("../images/subscribe-background.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     min-height: 414.86px;
     padding-top: 96px;
 }
@@ -326,6 +326,17 @@ flex-grow: 1;
     color: #ffffff;
 }
 
+.subscription-form-email {
+    margin: 0 ;
+}
+
+.subscription-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 684px;
+    margin: 0 auto;
+}
+
 .input-email {
     font-size: 18px;
     font-weight: 400;
@@ -333,8 +344,7 @@ flex-grow: 1;
     background: #F2F2F2;
     border: none;
     border-radius: 4px 0px 0px 4px;
-    width: 452px;
-    margin: 0 0 104px 258px;
+    width: 432px;
     padding: 14px 0 14px 20px;
 }
 
@@ -349,6 +359,7 @@ flex-grow: 1;
     background: #82B3D3;
     border: none;
     border-radius: 0px 4px 4px 0px;
+    min-width: 232px;
 }
 
 .page-footer-container {
@@ -358,7 +369,7 @@ flex-grow: 1;
 }
 
 .footer-social {
-   min-width: 142px;
+    min-width: 142px;
     margin: 0;
     margin-right: 41.5px;
 }
@@ -398,6 +409,7 @@ flex-grow: 1;
 
 .footer-phone {
     width: 720px;
+    margin-right: 41.5px;
     text-align: center;
 }
 
@@ -412,9 +424,8 @@ flex-grow: 1;
 }
 
 .footer-logo {
+    display: block;
     width: 115px;
-    margin-left: 41.5px;
-    margin-right: 70px;
 }
 
 .filter {
