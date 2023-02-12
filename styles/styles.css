@@ -203,10 +203,6 @@ flex-grow: 1;
     margin: 0 274.5px 90px;
 }
 
-.subscription-description-white {
-    color: #ffffff;
-}
-
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
@@ -310,6 +306,36 @@ flex-grow: 1;
     margin: 0 412px 96px;
     padding: 8px 50px;
     border-radius: 4px;
+    background: #756157;
+}
+
+.subscription {
+    background: #82B3D3 url("../images/subscribe-background.jpg") no-repeat;
+    background-size: 100% 100%;
+    min-height: 414.86px;
+    padding-top: 96px;
+}
+
+.subscription-title-mailing-list {
+    margin: 0 398px 20px;
+    color: #ffffff;
+}
+
+.subscription-description-mailing-list {
+    margin: 0 362.5px 54px;
+    color: #ffffff;
+}
+
+.input-email {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    background: #F2F2F2;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    width: 452px;
+    margin: 0 0 104px 258px;
+    padding: 14px 0 14px 20px;
 }
 
 .subscribe-button {
@@ -320,79 +346,54 @@ flex-grow: 1;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-}
-
-.search-link-button-brown {
-    background: #756157;
-}
-
-.subscribe-button {
     background: #82B3D3;
     border: none;
     border-radius: 0px 4px 4px 0px;
 }
 
-.subscription {
-    background: #82B3D3 url("../images/subscribe-background.jpg") no-repeat;
-    background-size: 100% 100%;
-    min-height: 414.86px;
-}
-
-.subscription-title-white {
-    margin: 96px 398px 20px;
-    color: #ffffff;
-}
-
-.subscription-description-white {
-    margin: 0 362px 54px;
-}
-
-/* .subscription-container {
-    width: 684px;
-    margin: 0 auto;
-    padding: 0;
-} */
-
-.input-email {
-    font-size: 18px;
-    font-weight: 400;
-    color: #000000;
-    background: #F2F2F2;
-    border: none;
-    border-radius: 4px 0px 0px 4px;
-}
-
 .page-footer-container {
     display: flex;
     width: 1060px;
-    margin: 0 auto;
+    margin: 40px 70px 30px;
 }
 
 .footer-social {
-    width: 142px;
-    margin-left: 70px;
+   min-width: 142px;
+    margin: 0;
     margin-right: 41.5px;
 }
 
 .social-list {
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .social-link-button {
-    text-decoration: none;
-    color: #000000;
+    display: block;
 }
 
 .social-link-button-vk {
-    background: url("../images/vk.svg") no-repeat;
+    min-width: 24px;
+    min-height: 14px;
+    padding: 13px 11.67px;
+    background: url("../images/vk.svg") no-repeat center;
 }
 
 .social-link-button-telegram {
-    background: url("../images/telegram.svg") no-repeat;
+    min-width: 18px;
+    min-height: 16px;
+    padding: 12px 14.67px;
+    background: url("../images/telegram.svg") no-repeat center;
 }
 
 .social-link-button-youtube {
-    background: url("../images/youtube.svg") no-repeat;
+    min-width: 22px;
+    min-height: 17px;
+    padding: 11.5px 12.67px;
+    background: url("../images/youtube.svg") no-repeat center;
 }
 
 .footer-phone {
