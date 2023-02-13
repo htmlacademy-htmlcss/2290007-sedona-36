@@ -102,7 +102,6 @@ body {
 }
 
 .navigation-user .navigation-link {
-
     min-width: 20px;
     min-height: 20px;
 }
@@ -435,13 +434,19 @@ flex-grow: 1;
 .filter {
     background: #82B3D3 url("../images/filter-background.jpg") no-repeat;
     background-size: 100% 100%;
+    box-sizing: border-box;
     min-height: 412px;
 }
 
 .filter-content {
     width: 1060px;
-    margin: 0 70px;
+    margin: 0 auto;
     padding: 0;
+}
+
+.filter-content-header {
+    margin: 0;
+    padding-top: 35px;
 }
 
 .filter-header-title {
@@ -449,23 +454,41 @@ flex-grow: 1;
     line-height: 78px;
     font-weight: 700;
     color: #ffffff;
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 .breadcrubs-list {
     display: flex;
+    flex-wrap: wrap;
+    min-width: 114px;
     margin: 0;
+    margin-bottom: 40px;
     padding: 0;
-    width: 114px;
     list-style: none;
     color: #ffffff;
 }
 
-.icon-home {
-    background: url("../images/home.svg") no-repeat;
+.breadcrubs-link-button-home {
+    display: block;
+    min-width: 13px;
+    min-height: 15px;
+    padding: 3.5px 10.5px 5.5px 0;
+    background: url("../images/home.svg") no-repeat center;
 }
 
-.icon-arrowtoright {
-    background: url("../images/arrow-to-right.svg") no-repeat;;
+.breadcrubs-link-button-arrowtoright {
+    display: block;
+    min-width: 13px;
+    min-height: 15px;
+    padding: 5px 10.8px 5px 0;
+    background: url("../images/arrow-to-right.svg") no-repeat center;
+}
+
+.breadcrubs-link {
+    line-height: 21px;
+    font-weight: 400;
+    color: #ffffff;
 }
 
 .filter-hotel {
