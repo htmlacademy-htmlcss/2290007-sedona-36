@@ -128,28 +128,26 @@
           </section>
         </div>
         <section class="catalog">
+
           <section class="hotels-sorting">
             <h2 class="visually-hidden">Список гостиниц</h2>
             <p class="hotels-search-result">Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
             </select>
-            <img class="icon-arrowtodown" src="images/arrow-to-down.svg" width="12" height="9" alt="Стрелка вниз">
-          <ul class="buttons-list">
-            <a class="table-link-button" href="#">
-              <img class="icon-table" src="images/table.svg" width="16" height="14" alt="Таблица карточек">
-              <span class="visually-hidden">Показать таблицу карточек</span>
-            </a>
-            <a class="slideshow-link-button" href="#">
-              <img class="icon-slideshow" src="images/slideshow.svg" width="16" height="14" alt="Слайдшоу карточек">
-              <span class="visually-hidden">Показать слайдшоу карточек</span>
-            </a>
-            <a class="list-link-button" href="#">
-              <img class="icon-list" src="images/list.svg" width="16" height="14" alt="Список карточек">
-              <span class="visually-hidden">Показать список карточек</span>
-            </a>
-          </ul>
+            <ul class="sorting-buttons-list">
+              <a class="sorting-link-button link-button-table" href="#">
+                <span class="visually-hidden">Показать таблицу карточек</span>
+              </a>
+              <a class="sorting-link-button link-button-slideshow" href="#">
+                <span class="visually-hidden">Показать слайдшоу карточек</span>
+              </a>
+              <a class="sorting-link-button link-button-list" href="#">
+                <span class="visually-hidden">Показать список карточек</span>
+              </a>
+            </ul>
           </section>
+
           <section class="catalog-hotels">
             <ul class="hotels-list">
               <li class="hotel-card">
@@ -262,18 +260,16 @@
             </li>
           </ol>
         </section>
-        <section class="subscription-catalog">
-          <div class="subscription-catalog-container">
-            <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-            <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <p class="subscription-form-email">
-              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="subscription-email"></label>
-                <input class="input-email" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
-                <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
-              </form>
-            </p>
-          </div>
+        <section class="subscription subscription-catalog">
+          <h3 class="subscription-title subscription-catalog-title">Подпишитесь на рассылку</h3>
+          <p class="subscription-description subscription-catalog-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscription-form-email">
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="subscription-email"></label>
+              <input class="input-email" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
+              <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
+            </form>
+          </p>
         </section>
       </main>
       <footer class="page-footer">
