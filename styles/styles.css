@@ -226,7 +226,13 @@ flex-grow: 1;
     width: 100%;
     box-sizing: border-box;
 }
-.picture-hotel {
+
+.advantages-item-bridge {
+    flex-direction: row-reverse;
+}
+
+.picture-hotel,
+.picture-canyon {
     height: 100%;
     box-sizing: border-box;
 }
