@@ -66,6 +66,7 @@ body {
     margin: 0;
     margin-right: 70px;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .navigation-list {
