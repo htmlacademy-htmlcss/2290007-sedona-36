@@ -274,7 +274,12 @@ flex-grow: 1;
     text-transform: uppercase;
     color: #000000;
     margin: 112.5px 112.5px 62px;
+}
 
+.advantage-subtitle-housing,
+.advantage-subtitle-food,
+.advantage-subtitle-souvenirs {
+    margin: 0 85px 30px;
 }
 
 .advantage-subtitle-town,
