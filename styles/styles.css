@@ -301,16 +301,28 @@ flex-grow: 1;
     background: rgba(131, 179, 211, 0.2);
 }
 
+.search {
+padding-top: 96px;
+padding-bottom: 96px;
+}
+
+.search-container {
+    width: 592px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .search-title {
-    margin: 96px 451.5px 20px;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .search-description {
-    margin: 0 304px 54px;
+    margin: 0;
+    margin-bottom: 54px;
 }
 
 .search-link-button {
-    display: block;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -318,7 +330,6 @@ flex-grow: 1;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    margin: 0 412px 96px;
     padding: 8px 50px;
     border-radius: 4px;
     background: #756157;
