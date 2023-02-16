@@ -8,42 +8,40 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <div class="page-header-container">
-          <div class="header-logo">
-            <a class="header-link-sedona">
-              <img class="logo-sedona" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип городка Седона">
-            </a>
-          </div>
-          <nav class="navigation">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="index.html">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">О седоне</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
-              </li>
-            </ul>
-            <ul class="navigation-list navigation-user">
-              <li class="navigation-user-item">
-                <a class="navigation-user-link-search" href="#">
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="navigation-user-link-heart" href="#">
-                  <span class="quantity-selected">12</span>
-                  <span class="visually-hidden">Избранное</span>
-                </a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="navigation-user-link-button" href="#">Хочу сюда!</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="header-logo">
+          <a class="header-link-sedona">
+            <img class="logo-sedona" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип городка Седона.">
+          </a>
         </div>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+           <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-search" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-heart" href="#">
+                 <span class="quantity-selected">12</span>
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main class="main-inner main-container">
         <div class="filter">
@@ -52,12 +50,12 @@
               <h1 class="filter-header-title">Гостиницы Седоны</h1>
               <ul class="breadcrubs-list">
                 <li class="breadcrubs-item">
-                  <a class="breadcrubs-link-button icon-home" href="index.html">
+                  <a class="breadcrubs-link-button breadcrubs-link-button-home" href="index.html">
                     <span class="visually-hidden">На главную</span>
                   </a>
                 </li>
                 <li class="breadcrubs-item">
-                  <a class="breadcrubs-link-button icon-arrowtoright">
+                  <a class="breadcrubs-link-button breadcrubs-link-button-arrowtoright">
                     <span class="visually-hidden">Стрелка вправо</span>
                   </a>
                 </li>
@@ -129,33 +127,31 @@
           </section>
         </div>
         <section class="catalog">
+
           <section class="hotels-sorting">
             <h2 class="visually-hidden">Список гостиниц</h2>
             <p class="hotels-search-result">Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
             </select>
-            <img class="icon-arrowtodown" src="images/arrow-to-down.svg" width="12" height="9" alt="Стрелка вниз">
-          <ul class="buttons-list">
-            <a class="table-link-button" href="#">
-              <img class="icon-table" src="images/table.svg" width="16" height="14" alt="Таблица карточек">
-              <span class="visually-hidden">Показать таблицу карточек</span>
-            </a>
-            <a class="slideshow-link-button" href="#">
-              <img class="icon-slideshow" src="images/slideshow.svg" width="16" height="14" alt="Слайдшоу карточек">
-              <span class="visually-hidden">Показать слайдшоу карточек</span>
-            </a>
-            <a class="list-link-button" href="#">
-              <img class="icon-list" src="images/list.svg" width="16" height="14" alt="Список карточек">
-              <span class="visually-hidden">Показать список карточек</span>
-            </a>
-          </ul>
+            <ul class="sorting-buttons-list">
+              <a class="sorting-link-button link-button-table" href="#">
+                <span class="visually-hidden">Показать таблицу карточек</span>
+              </a>
+              <a class="sorting-link-button link-button-slideshow" href="#">
+                <span class="visually-hidden">Показать слайдшоу карточек</span>
+              </a>
+              <a class="sorting-link-button link-button-list" href="#">
+                <span class="visually-hidden">Показать список карточек</span>
+              </a>
+            </ul>
           </section>
+
           <section class="catalog-hotels">
             <ul class="hotels-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img src="images/hotel-1.jpg" width="300" height="212" alt="Амара Резорт и Спа">
+                  <img src="images/hotel-1.jpg" width="300" height="212" alt="Амара Резорт и Спа.">
                   <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                 </a>
                 <p class="hotel-card-description">
@@ -177,7 +173,7 @@
               </li>
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img src="images/hotel-2.jpg" width="300" height="212" alt="Виллы в Поко Диабло">
+                  <img src="images/hotel-2.jpg" width="300" height="212" alt="Виллы в Поко Диабло.">
                   <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                 </a>
                 <p class="hotel-card-description">
@@ -199,7 +195,7 @@
               </li>
               <li class="hotel-card hotel-card-desert">
                 <a class="hotel-card-link" href="#">
-                  <img src="images/hotel-3.jpg" width="300" height="212" alt="Дезерт Куэйл Инн">
+                  <img src="images/hotel-3.jpg" width="300" height="212" alt="Дезерт Куэйл Инн.">
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
                 </a>
                 <p class="hotel-card-description">
@@ -220,7 +216,7 @@
               </li>
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img src="images/hotel-4.jpg" width="300" height="212" alt="Гринтри Инн">
+                  <img src="images/hotel-4.jpg" width="300" height="212" alt="Гринтри Инн.">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
                 </a>
                 <p class="hotel-card-description">
@@ -259,29 +255,27 @@
               <a class="pagination-link pagination-link-points" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
+              <a class="pagination-link pagination-link-ten" href="#">10</a>
             </li>
           </ol>
         </section>
-        <section class="subscription-catalog">
-          <div class="subscription-catalog-container">
-            <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-            <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <p class="subscription-form-email">
-              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="subscription-email"></label>
-                <input class="input-email" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
-                <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
-              </form>
-            </p>
-          </div>
+        <section class="subscription subscription-catalog">
+          <h3 class="subscription-title subscription-catalog-title">Подпишитесь на рассылку</h3>
+          <p class="subscription-description subscription-catalog-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscription-form-email">
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="subscription-email"></label>
+              <input class="input-email" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
+              <button class="subscribe-button" type="submit">Подписаться</button>
+            </form>
+          </p>
         </section>
       </main>
       <footer class="page-footer">
         <div class="page-footer-container">
           <div class="footer-social">
             <h2 class="visually-hidden">Давайте дружить</h2>
-            <ul class="social-list">
+             <ul class="social-list">
               <li class="social-item">
                 <a class="social-link-button social-link-button-vk" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">В Контакте</span>
@@ -305,7 +299,7 @@
           </div>
           <div class="footer-logo">
             <a class="footer-link-htmlacademy" href="https://htmlacademy.ru/">
-              <img class="logo-htmlacademy" src="images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy">
+              <img class="logo-htmlacademy" src="images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
             </a>
           </div>
         </div>
