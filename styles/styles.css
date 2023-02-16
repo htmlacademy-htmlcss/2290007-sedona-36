@@ -234,8 +234,10 @@ flex-grow: 1;
 
 .picture-hotel,
 .picture-canyon {
+    /* height: 100%;
+    box-sizing: border-box; */
+    object-fit: cover;
     height: 100%;
-    box-sizing: border-box;
 }
 
 .advantages-item-wrapper {
