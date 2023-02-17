@@ -676,7 +676,7 @@ padding-bottom: 96px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex-grow: 1;
 }
 
 .hotel-card:nth-child(3n) {
@@ -704,7 +704,7 @@ padding-bottom: 96px;
 .hotel-card-buttons {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 16px;
 }
 
 .hotel-card-link-button-more {
@@ -731,6 +731,16 @@ padding-bottom: 96px;
     padding: 8px 20px;
 }
 
+.hotel-card-stars-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-card-stars-rating-description {
+    width: 140px;
+    padding: 10px 0;
+}
+
 .hotel-card-rating {
     line-height: 20px;
     font-weight: 740;
@@ -738,6 +748,8 @@ padding-bottom: 96px;
     text-transform: uppercase;
     color: #333333;
     background: #F2F2F2;
+    border-radius: 4px;
+    padding: 8px 20px;
 }
 .pagination {
     width: 1060px;
