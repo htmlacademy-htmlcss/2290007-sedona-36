@@ -40,7 +40,8 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #F2F2F2;
 }
 
 .page-header {
@@ -160,6 +161,7 @@ flex-grow: 1;
 .page-container {
     margin: 0 auto;
     width: 1200px;
+    background: #ffffff;
 }
 
 .main-inner {
@@ -303,13 +305,18 @@ flex-grow: 1;
     background: #82B3D3;
 }
 
+.advantages-item-square,
+.advantages-item-tourists {
+    background: rgba(131, 179, 211, 0.12);
+}
+
 .advantages-item-road {
     background: rgba(131, 179, 211, 0.2);
 }
 
 .search {
-padding-top: 96px;
-padding-bottom: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .search-container {
@@ -401,12 +408,14 @@ padding-bottom: 96px;
 
 .page-footer-container {
     display: flex;
+    justify-content: space-between;
     width: 1060px;
-    margin: 40px 70px 30px;
+    padding:  40px 70px 30px;
 }
 
 .footer-social {
-    min-width: 142px;
+    width: 142px;
+    box-sizing: border-box;
     margin: 0;
     margin-right: 41.5px;
 }
@@ -445,7 +454,8 @@ padding-bottom: 96px;
 }
 
 .footer-phone {
-    width: 720px;
+    min-width: 331px;
+    box-sizing: border-box;
     margin-right: 41.5px;
     text-align: center;
 }
@@ -626,6 +636,7 @@ padding-bottom: 96px;
     gap: 8px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .sorting-link-button {
@@ -683,6 +694,10 @@ padding-bottom: 96px;
     /* margin-right: 0; */
 }
 
+.hotel-card-title-link {
+    text-decoration: none;
+}
+
 .hotel-card-title {
     font-size: 24px;
     line-height: 28px;
@@ -716,6 +731,9 @@ padding-bottom: 96px;
     color: #ffffff;
     background: #756157;
     border-radius: 4px;
+    width: 140px;
+    box-sizing: border-box;
+    margin-right: 20px;
     padding: 8px 26px;
 }
 
@@ -728,6 +746,8 @@ padding-bottom: 96px;
     background: #82B3D3;
     border: none;
     border-radius: 4px;
+    width: 140px;
+    box-sizing: border-box;
     padding: 8px 20px;
 }
 
@@ -749,8 +769,10 @@ padding-bottom: 96px;
     color: #333333;
     background: #F2F2F2;
     border-radius: 4px;
-    padding: 8px 20px;
+    height: 20px;
+    padding: 8px 22px;
 }
+
 .pagination {
     width: 1060px;
     margin: 0 auto 60px;
