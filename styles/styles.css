@@ -40,7 +40,8 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #F2F2F2;
 }
 
 .page-header {
@@ -160,6 +161,7 @@ flex-grow: 1;
 .page-container {
     margin: 0 auto;
     width: 1200px;
+    background: #ffffff;
 }
 
 .main-inner {
@@ -303,13 +305,18 @@ flex-grow: 1;
     background: #82B3D3;
 }
 
+.advantages-item-square,
+.advantages-item-tourists {
+    background: rgba(131, 179, 211, 0.12);
+}
+
 .advantages-item-road {
     background: rgba(131, 179, 211, 0.2);
 }
 
 .search {
-padding-top: 96px;
-padding-bottom: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .search-container {
@@ -401,12 +408,14 @@ padding-bottom: 96px;
 
 .page-footer-container {
     display: flex;
+    justify-content: space-between;
     width: 1060px;
-    margin: 40px 70px 30px;
+    padding:  40px 70px 30px;
 }
 
 .footer-social {
-    min-width: 142px;
+    width: 142px;
+    box-sizing: border-box;
     margin: 0;
     margin-right: 41.5px;
 }
@@ -445,7 +454,8 @@ padding-bottom: 96px;
 }
 
 .footer-phone {
-    width: 720px;
+    min-width: 331px;
+    box-sizing: border-box;
     margin-right: 41.5px;
     text-align: center;
 }
@@ -626,6 +636,7 @@ padding-bottom: 96px;
     gap: 8px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .sorting-link-button {
@@ -647,21 +658,44 @@ padding-bottom: 96px;
 }
 
 .hotels-list {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     width: 1060px;
-    margin: 0 70px;
+    margin: 0 auto;
+    margin-bottom: 60px;
     padding: 0;
-    list-style: none;
+    list-style-type: none; */
+    width: 1060px;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 20px;
+    list-style-type: none;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 0;
 }
 
 .hotel-card {
-    width: 340px;
-    margin-right: 20px;
+    /* width: 340px;
+    margin-bottom: 20px;
+    margin-right: 20px; */
+    display: flex;
+    flex-direction: column;
 }
 
-.hotel-card-desert {
-    margin-right: 0;
+.hotel-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.hotel-card:nth-child(3n) {
+    /* margin-right: 0; */
+}
+
+.hotel-card-title-link {
+    text-decoration: none;
 }
 
 .hotel-card-title {
@@ -669,6 +703,7 @@ padding-bottom: 96px;
     line-height: 28px;
     font-weight: 700;
     color: #000000;
+    margin: 16px 0;
 }
 
 .hotel-card-description {
@@ -676,13 +711,18 @@ padding-bottom: 96px;
     line-height: 21px;
     font-weight: 400;
     color: #333333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
 }
 
-.hotel-price {
-    text-align: right;
+.hotel-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
 }
 
-.hotel-link-button {
+.hotel-card-link-button-more {
     line-height: 20px;
     font-weight: 700;
     text-align: center;
@@ -690,28 +730,52 @@ padding-bottom: 96px;
     text-decoration: none;
     color: #ffffff;
     background: #756157;
+    border-radius: 4px;
+    width: 140px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    padding: 8px 26px;
 }
 
-.hotels-favorites-button {
+.hotel-card-button-favorites {
     line-height: 20px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     background: #82B3D3;
+    border: none;
+    border-radius: 4px;
+    width: 140px;
+    box-sizing: border-box;
+    padding: 8px 20px;
 }
 
-.hotel-rating {
+.hotel-card-stars-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-card-stars-rating-description {
+    width: 140px;
+    padding: 10px 0;
+}
+
+.hotel-card-rating {
     line-height: 20px;
     font-weight: 740;
     text-align: center;
     text-transform: uppercase;
     color: #333333;
     background: #F2F2F2;
+    border-radius: 4px;
+    height: 20px;
+    padding: 8px 22px;
 }
+
 .pagination {
     width: 1060px;
-    margin: 80px auto 60px;
+    margin: 0 auto 60px;
 }
 
 .pagination-list {
