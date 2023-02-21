@@ -135,6 +135,7 @@ body {
 }
 
 .navigation-user .navigation-link-button {
+    display: inline-block;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
@@ -336,6 +337,7 @@ flex-grow: 1;
 }
 
 .search-link-button {
+    display: inline-block;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -391,6 +393,7 @@ flex-grow: 1;
 }
 
 .subscribe-button {
+    display: inline-block;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -404,6 +407,8 @@ flex-grow: 1;
     min-width: 232px;
     box-sizing: border-box;
     padding: 8px 10px;
+    cursor: pointer;
+
 }
 
 .page-footer-container {
@@ -461,6 +466,7 @@ flex-grow: 1;
 }
 
 .footer-phone-link {
+    display: block;
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
@@ -587,12 +593,15 @@ flex-grow: 1;
 }
 
 .filter-hotel-button {
+    display: inline-block;
     line-height: 23px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .button-blue {
@@ -738,6 +747,7 @@ flex-grow: 1;
 }
 
 .hotel-card-button-favorites {
+    display: inline-block;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
@@ -749,6 +759,7 @@ flex-grow: 1;
     width: 140px;
     box-sizing: border-box;
     padding: 8px 20px;
+    cursor: pointer;
 }
 
 .hotel-card-stars-rating {
