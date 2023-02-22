@@ -768,11 +768,15 @@ flex-grow: 1;
 }
 
 .hotel-card-stars-rating-description {
+    display: flex;
+    align-items: center;
     width: 140px;
     padding: 10px 0;
 }
 
 .hotel-card-rating {
+    display: flex;
+    align-items: center;
     line-height: 20px;
     font-weight: 740;
     text-align: center;
@@ -780,7 +784,6 @@ flex-grow: 1;
     color: #333333;
     background: #F2F2F2;
     border-radius: 4px;
-    height: 20px;
     padding: 8px 22px;
 }
 
