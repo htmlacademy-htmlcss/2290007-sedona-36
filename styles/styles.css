@@ -490,6 +490,11 @@ body {
     display: block;
 }
 
+.social-link-button:active {
+    opacity: 0.5;
+}
+
+
 .social-link-button-vk {
     min-width: 24px;
     min-height: 14px;
@@ -527,6 +532,18 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+}
+
+.footer-phone-link:hover {
+    color: #756157;
+}
+
+.footer-phone-link:focus {
+    color: #756157;
+}
+
+.footer-phone-link:active {
+    color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-logo {
@@ -707,6 +724,24 @@ body {
     height: 48px;
 }
 
+.sorting-link-button:hover {
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.sorting-link-button:focus {
+    border: 2px solid #68A2CA;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.sorting-link-button:active {
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 .link-button-table {
     background: url("../images/table.svg") no-repeat center;
 }
@@ -799,6 +834,22 @@ body {
     padding: 8px 26px;
 }
 
+.hotel-card-link-button-more:hover {
+    opacity: 0.6;
+}
+
+.hotel-card-link-button-more:focus {
+    border: 3px solid #83B3D3;
+}
+
+.hotel-card-link-button-more:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-card-link-button-more:disabled {
+    opacity: 0.1;
+}
+
 .hotel-card-button-favorites {
     display: inline-block;
     line-height: 20px;
@@ -815,30 +866,21 @@ body {
     cursor: pointer;
 }
 
-.hotel-card-button-favorites:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #7DB54F;
-}
-
-.hotel-card-button-favorites:visited {
-
-}
-
-/* .navigation-link-button:hover {
+.hotel-card-button-favorites:hover {
     opacity: 0.6;
 }
 
-.navigation-link-button:focus {
+.hotel-card-button-favorites:focus {
     border: 3px solid #83B3D3;
 }
 
-.navigation-link-button:active {
+.hotel-card-button-favorites:active {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.navigation-link-button:disabled {
+.hotel-card-button-favorites:disabled {
     opacity: 0.1;
-} */
+}
 
 .hotel-card-stars-rating {
     display: flex;
@@ -856,7 +898,7 @@ body {
     display: flex;
     align-items: center;
     line-height: 20px;
-    font-weight: 740;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     color: #333333;
@@ -914,6 +956,10 @@ body {
 
 .pagination-link-ten {
     padding: 12px 19px 13px 18px;
+}
+
+.pagination-link:active:not(.pagination-link-current):not(.pagination-link-points)  {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .subscription-catalog {
