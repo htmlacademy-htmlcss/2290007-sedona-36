@@ -582,33 +582,48 @@ body {
     display: flex;
     flex-wrap: wrap;
     min-width: 114px;
+    box-sizing: border-box;
     margin: 0;
     margin-bottom: 40px;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
     color: #ffffff;
 }
 
+.breadcrubs-item {
+    margin-right: 10px;
+}
+
 .breadcrubs-link-button-home {
-    display: block;
-    min-width: 13px;
-    min-height: 15px;
-    padding: 3.5px 10.5px 5.5px 0;
+    display: inline-block;
+    min-width: 12px;
+    min-height: 12px;
+    padding: 3px 0 5px;
     background: url("../images/home.svg") no-repeat center;
 }
 
 .breadcrubs-link-button-arrowtoright {
     display: block;
-    min-width: 13px;
-    min-height: 15px;
-    padding: 5px 10.8px 5px 0;
+    min-width: 6px;
+    min-height: 10px;
+    padding: 5px 0 5px;
     background: url("../images/arrow-to-right.svg") no-repeat center;
 }
 
 .breadcrubs-link {
+    display: flex;
     line-height: 21px;
     font-weight: 400;
+    text-decoration: none;
     color: #ffffff;
+}
+
+.breadcrubs-link-button:hover:not(.breadcrubs-link-button-arrowtoright) {
+    opacity: 0.6;
+}
+
+.breadcrubs-link-button:active:not(.breadcrubs-link-button-arrowtoright) {
+    opacity: 0.3;
 }
 
 .filter-hotel {
