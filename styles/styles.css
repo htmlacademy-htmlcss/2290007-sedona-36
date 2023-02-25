@@ -556,9 +556,13 @@ body {
     width: 115px;
 }
 
-/* .logo-htmlacademy:focus {
+.logo-htmlacademy {
+    fill: #000000;
+}
+
+.logo-htmlacademy:hover {
     background: #756157;
-} */
+}
 
 .filter {
     background: #82B3D3 url("../images/filter-background.jpg") no-repeat;
