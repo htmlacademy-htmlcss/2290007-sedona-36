@@ -105,9 +105,16 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 268px;
+    height: 62px;
     box-sizing: border-box;
     margin: 0;
     align-items: center;
+}
+
+.navigation-user .navigation-item {
+    display: flex;
+    align-items: center;
+    height: 62px;
 }
 
 .navigation-user .navigation-link {
@@ -561,7 +568,15 @@ body {
 }
 
 .logo-htmlacademy:hover {
-    background: #756157;
+    fill: #756157;
+}
+
+.logo-htmlacademy:focus {
+    fill: #756157;
+}
+
+.logo-htmlacademy:active {
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 .filter {
