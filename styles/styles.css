@@ -162,7 +162,7 @@ body {
 }
 
 .navigation-link-button:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .navigation-link-button:active {
@@ -178,7 +178,7 @@ body {
 }
 
 .main-index {
-
+    margin-top: -8px;
 }
 
 .page-container {
@@ -188,7 +188,7 @@ body {
 }
 
 .main-inner {
-
+    margin-top: -8px;
 }
 
 .hero {
@@ -377,7 +377,7 @@ body {
 }
 
 .search-link-button:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .search-link-button:active {
@@ -453,7 +453,7 @@ body {
 }
 
 .subscribe-button:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .subscribe-button:active {
@@ -550,6 +550,10 @@ body {
     display: block;
     width: 115px;
 }
+
+/* .logo-htmlacademy:focus {
+    background: #756157;
+} */
 
 .filter {
     background: #82B3D3 url("../images/filter-background.jpg") no-repeat;
@@ -693,6 +697,22 @@ body {
     background: #82B3D3;
 }
 
+.filter-hotel-button:hover {
+    opacity: 0.6;
+}
+
+.filter-hotel-button:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.filter-hotel-button:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-hotel-button:disabled {
+    opacity: 0.1;
+}
+
 .hotels-sorting {
     display: flex;
     width: 1060px;
@@ -737,6 +757,7 @@ body {
     display: block;
     width: 48px;
     height: 48px;
+    border: none;
 }
 
 .sorting-link-button:hover {
@@ -854,7 +875,7 @@ body {
 }
 
 .hotel-card-link-button-more:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .hotel-card-link-button-more:active {
@@ -886,7 +907,7 @@ body {
 }
 
 .hotel-card-button-favorites:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .hotel-card-button-favorites:active {
