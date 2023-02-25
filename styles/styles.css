@@ -907,6 +907,10 @@ body {
     cursor: pointer;
 }
 
+.hotel-card-button-favorites-inner {
+    background: #7DB54F;;
+}
+
 .hotel-card-button-favorites:hover {
     opacity: 0.6;
 }
