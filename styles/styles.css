@@ -662,22 +662,27 @@ body {
 
 .filter-hotel-form {
     display: flex;
+    align-items: center;
     margin: 0;
 }
 
 .filter-hotel-group {
+    display: flex;
+    flex-wrap: wrap;
     width: 151px;
+    margin: 0;
     margin-right: 70px;
     padding: 0;
     border: none;
 }
 
 .filter-hotel-group-housing-type {
-    margin-right: 140.15px;
+    margin-right: 140px;
 }
 
 .filter-hotel-group-price {
-    width: 288px;
+    /* width: 288px; */
+    margin: 0;
 }
 
 .filter-hotel-title {
@@ -685,9 +690,14 @@ body {
     font-weight: 700;
     text-transform: capitalize;
     color: #ffffff;
+    margin-bottom: 32px;
 }
 
 .filter-hotel-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -703,6 +713,8 @@ body {
 .filter-hotel-buttons {
     display: flex;
     flex-direction: column;
+    gap: 32px;
+    margin-left: auto;
 }
 
 .filter-hotel-button {
@@ -714,7 +726,9 @@ body {
     color: #ffffff;
     background: none;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    padding: 8px 50px;
 }
 
 .button-blue {
