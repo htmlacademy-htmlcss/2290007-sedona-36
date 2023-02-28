@@ -91,7 +91,7 @@ body {
     position: relative;
 }
 
-.navigation-link-current::before {
+.navigation-link-current::after {
     content: "";
     position: absolute;
     left: 16px;
