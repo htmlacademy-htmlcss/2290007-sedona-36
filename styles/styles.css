@@ -499,33 +499,26 @@ body {
 }
 
 .social-link-button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 40px;
+    box-sizing: border-box;
+    color: #83B3D3;
+    background-position: center;
+}
+
+.social-link-button:hover {
+    color: #68A2CA;
+}
+
+.social-link-button:focus {
+    color: #68A2CA;
 }
 
 .social-link-button:active {
-    opacity: 0.5;
-}
-
-
-.social-link-button-vk {
-    min-width: 24px;
-    min-height: 14px;
-    padding: 13px 11.67px;
-    background: url("../images/vk.svg") no-repeat center;
-}
-
-.social-link-button-telegram {
-    min-width: 18px;
-    min-height: 16px;
-    padding: 12px 14.67px;
-    background: url("../images/telegram.svg") no-repeat center;
-}
-
-.social-link-button-youtube {
-    min-width: 22px;
-    min-height: 17px;
-    padding: 11.5px 12.67px;
-    background: url("../images/youtube.svg") no-repeat center;
+    color: rgba(104, 162, 202, 0.3);
 }
 
 .footer-phone {
