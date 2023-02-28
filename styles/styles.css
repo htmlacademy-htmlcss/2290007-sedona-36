@@ -779,7 +779,24 @@ body {
     border-radius: 4px;
     min-width: 292px;
     margin-right: 70px;
-    padding: 0;
+    padding: 12px 20px;
+    padding-right: 40px;
+    appearance: none;
+    background: url("../images/arrow-to-down.svg") no-repeat;
+    background-position: right 20px center;
+}
+
+.select-control:hover {
+    border-color: #68A2CA;
+}
+
+.select-control:focus {
+    border-color: #3F5E72;
+    outline: none;
+}
+
+.select-control:disabled {
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-buttons-list {
@@ -808,6 +825,7 @@ body {
     border: 2px solid #68A2CA;
     border-radius: 4px;
     box-sizing: border-box;
+    outline: none;
 }
 
 .sorting-link-button:active {
