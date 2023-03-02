@@ -703,10 +703,54 @@ body {
     color: #ffffff;
 }
 
+.range-wrapper-inputs {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 48px;
+}
+
+.range-input {
+    width: 143px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background: #F2F2F2;
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.range-input-start {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.range-input-end {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.range-input:hover {
+    background: #E6E6E6;
+}
+
+.range-input:focus {
+    background: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.range-input:active {
+    background: #F2F2F2;
+    outline: 2px solid #000000;
+}
+
 .range-scale {
     position: relative;
     width: 287px;
-    margin-top: 36px;
     height: 4px;
     background: #756257;
 }
@@ -743,17 +787,19 @@ body {
 }
 
 .toggle-min {
-
+    top: -8px;
 }
 
 .toggle-max {
-
+    top: -8px;
+    right: 0;
 }
 
 .filter-hotel-buttons {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin-top: 66px;
     margin-left: auto;
 }
 
