@@ -692,15 +692,46 @@ body {
     gap: 16px;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
 }
 
-.filter-hotel-control {
+.filter-hotel-control:not(.filter-hotel-control-price) {
+    display: block;
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
     text-transform: none;
     color: #ffffff;
+    position: relative;
+    padding-left: 36px;
+}
+
+.control-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 1px;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.control-mark-checked {
+    background: #ffffff url("../images/checkbox-mark.svg") no-repeat center;
+}
+
+.control-mark-radio {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 1px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.control-mark-radio-checked {
+    background: #ffffff url("../images/radio-mark.svg") no-repeat center;
 }
 
 .range-wrapper-inputs {
@@ -739,20 +770,19 @@ body {
 }
 
 .range-input:focus {
-    background: #E6E6E6;
-    outline: 3px solid #83B3D3;
-}
-
-.range-input:active {
     background: #F2F2F2;
     outline: 2px solid #000000;
 }
+
+/* .range-span {
+    text-align: end;
+} */
 
 .range-scale {
     position: relative;
     width: 287px;
     height: 4px;
-    background: #756257;
+    background: transparent;
 }
 
 .range-bar {
