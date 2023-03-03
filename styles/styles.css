@@ -660,38 +660,61 @@ body {
     text-align: center;
 }
 
-.field-group-arrival {
+.field-group {
     display: grid;
-    grid-template-columns: 113px 440px;
-    justify-content: space-between;
+    grid-template-columns: 137px 440px;
     align-items: center;
     margin: 0;
-    margin-bottom: 23px;
 }
 
 .auth-form-span-arrival {
     color: #FF5757;
     grid-column: 2/3;
     justify-self: start;
-    padding-top: 4px;
-    padding-left: 20px;
-}
-
-.field-group-departure {
-    display: grid;
-    grid-template-columns: 119px 440px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    margin-bottom: 23px;
+    padding: 4px 20px 23px;
 }
 
 .auth-form-span-departure {
     color: #333333;
     grid-column: 2/3;
     justify-self: start;
-    padding-top: 4px;
-    padding-left: 20px;
+    padding: 4px 20px 23px;
+}
+
+.control-group {
+    display: grid;
+    grid-template-columns: 247px 247px;
+    gap: 88px;
+}
+
+.field-group-adults,
+.field-group-children {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.field-group-adults .auth-form-field,
+.field-group-children .auth-form-field {
+    width: 31px;
+    border: none;
+}
+
+.auth-form-button {
+    width: 40px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-reduce {
+    background: ;
+}
+
+.button-add {
+    background: ;
 }
 
 .filter {

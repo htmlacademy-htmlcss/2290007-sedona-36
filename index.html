@@ -172,24 +172,30 @@
           <section class="modal-content">
             <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="get">
-              <p class="field-group-arrival">
-                <label class="auth-form-label auth-form-label-arrival" for="arrival-date">Дата заезда:</label>
+              <p class="field-group">
+                <label class="auth-form-label" for="arrival-date">Дата заезда:</label>
                 <input class="auth-form-field" type="date" id="arrival-date" name="arrival-date" required>
                 <span class="auth-form-span auth-form-span-arrival">Мы не можем отправить вас в прошлое.</span>
               </p>
-              <p class="field-group-departure">
-                <label class="auth-form-label auth-form-label-departure" for="departure-date">Дата выезда:</label>
+              <p class="field-group">
+                <label class="auth-form-label" for="departure-date">Дата выезда:</label>
                 <input class="auth-form-field" type="date" id="departure-date" name="departure-date" required>
                 <span class="auth-form-span auth-form-span-departure">На эти даты есть свободные номера. Пока есть.</span>
               </p>
-              <p class="field-group">
-                <label class="auth-form-label" for="adults">Взрослые:</label>
-                <input class="auth-form-field" type="number" id="adults" name="adults" value="2" required>
-              </p>
-              <p class="field-group">
-                <label class="auth-form-label" for="children">Дети:</label>
-                <input class="auth-form-field field" type="number" id="children" name="children" value="2" required>
-              </p>
+              <div class="control-group">
+                <p class="field-group-adults">
+                  <label class="auth-form-label" for="adults">Взрослые:</label>
+                  <button class="auth-form-button button-reduce" type="button"></button>
+                  <input class="auth-form-field" type="number" id="adults" name="adults" value="2" required>
+                  <button class="auth-form-button button-add" type="button"></button>
+                </p>
+                <p class="field-group-children">
+                  <label class="auth-form-label" for="children">Дети:</label>
+                  <button class="auth-form-button button-reduce" type="button"></button>
+                  <input class="auth-form-field field" type="number" id="children" name="children" value="2" required>
+                  <button class="auth-form-button button-add" type="button"></button>
+                </p>
+              </div>
               <a class="modal-find-link" href="#">Найти</a>
             </form>
           </section>
