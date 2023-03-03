@@ -622,6 +622,76 @@ body {
     text-transform: uppercase;
     color: #000000;
     margin: 0;
+    margin-bottom: 64px;
+}
+
+.auth-form-label {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    align-items: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.auth-form-field {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    width: 440px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    /* border: none; */
+    border-radius: 4px;
+}
+
+.auth-form-span {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.field-group-arrival {
+    display: grid;
+    grid-template-columns: 113px 440px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 23px;
+}
+
+.auth-form-span-arrival {
+    color: #FF5757;
+    grid-column: 2/3;
+    justify-self: start;
+    padding-top: 4px;
+    padding-left: 20px;
+}
+
+.field-group-departure {
+    display: grid;
+    grid-template-columns: 119px 440px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 23px;
+}
+
+.auth-form-span-departure {
+    color: #333333;
+    grid-column: 2/3;
+    justify-self: start;
+    padding-top: 4px;
+    padding-left: 20px;
 }
 
 .filter {
