@@ -656,13 +656,22 @@ body {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    color: #000000;
     width: 440px;
     padding: 12px 20px;
     box-sizing: border-box;
+    color: #000000;
     background-color: #F2F2F2;
     border: none;
     border-radius: 4px;
+}
+
+.auth-form-field:hover {
+    background: #E6E6E6;
+}
+
+.auth-form-field:focus {
+    background: #F2F2F2;
+    border: 2px solid #000000;
 }
 
 .auth-form-span {
@@ -743,7 +752,7 @@ body {
 }
 
 .button-minus:hover,
-.button-plus:hover {
+.button-plus:hover::placeholder {
    color: #000000;
 
 }
@@ -753,7 +762,6 @@ body {
     color: #000000;
     outline: 3px solid #82B3D3;
     border-radius: 4px 0 0 4px;
-    border: none;
 }
 
 .button-minus:active,
