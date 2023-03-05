@@ -734,6 +734,7 @@ body {
     padding: 0;
     border: none;
     cursor: pointer;
+    border-radius: 4px 0 0 4px;
 }
 
 .button-reduce {
@@ -741,22 +742,22 @@ body {
     border-radius: 4px 0 0 4px;
 }
 
-.button-reduce:hover,
-.button-add:hover {
+.button-minus:hover,
+.button-plus:hover {
    color: #000000;
 
 }
 
-.button-reduce:focus,
-.button-add:focus {
+.button-minus:focus,
+.button-plus:focus {
     color: #000000;
     outline: 3px solid #82B3D3;
     border-radius: 4px 0 0 4px;
     border: none;
 }
 
-.button-reduce:active,
-.button-add:active {
+.button-minus:active,
+.button-plus:active {
     opacity: 0.2;
 }
 
