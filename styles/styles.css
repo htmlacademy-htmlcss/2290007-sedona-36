@@ -613,6 +613,20 @@ body {
     cursor: pointer;
 }
 
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+    background: #E6E6E6;
+    opacity: 0.3;
+}
+
 .modal-title {
     font-family: 'PT Sans';
     font-style: normal;
@@ -719,15 +733,36 @@ body {
     height: 48px;
     padding: 0;
     border: none;
+    cursor: pointer;
 }
 
 .button-reduce {
-    background: #F2F2F2 url("../images/minus.svg") no-repeat center;
+    color: #756157;
     border-radius: 4px 0 0 4px;
 }
 
+.button-reduce:hover,
+.button-add:hover {
+   color: #000000;
+
+}
+
+.button-reduce:focus,
+.button-add:focus {
+    color: #000000;
+    outline: 3px solid #82B3D3;
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+
+.button-reduce:active,
+.button-add:active {
+    opacity: 0.2;
+}
+
+
 .button-add {
-    background: #F2F2F2 url("../images/plus.svg") no-repeat center;
+    color: #756157;
     border-radius: 0 4px 4px 0;
 }
 
@@ -760,6 +795,7 @@ body {
     background-color: #83B3D3;
     border: none;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .tooltip-text {
