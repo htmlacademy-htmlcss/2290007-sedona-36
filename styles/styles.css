@@ -371,7 +371,7 @@ body {
     line-height: 21px;
     font-weight: 400;
     color: #333333;
-    margin: 0 85px 112.5px;
+    margin: 0 85px 81px;
 }
 
 .advantage-description-town,
@@ -624,7 +624,7 @@ body {
 }
 
 .modal-container-close {
-    /* display: none; */
+    display: none;
 }
 
 .modal {
