@@ -316,6 +316,10 @@ body {
     margin: 81px 162.5px 30px;
 }
 
+.advantages-item-container {
+    position: relative;
+}
+
 .advantage-subtitle {
     font-size: 24px;
     line-height: 28px;
@@ -325,16 +329,41 @@ body {
     margin: 112.5px 112.5px 62px;
 }
 
+.advantage-subtitle::after {
+    content: "";
+    position: absolute;
+    top: 85px;
+    right: 170px;
+    width: 60px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
 .advantage-subtitle-housing,
 .advantage-subtitle-food,
 .advantage-subtitle-souvenirs {
     margin: 0 85px 30px;
 }
 
+.advantages-item-wrapper {
+    position: relative;
+}
+
 .advantage-subtitle-town,
 .advantage-subtitle-bridge {
     margin: 102px 112.5px 62px;
     color: #ffffff;
+}
+
+.advantage-subtitle-town::after,
+.advantage-subtitle-bridge::after {
+    content: "";
+    position: absolute;
+    top: 185px;
+    right: 170px;
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .advantage-description {
@@ -595,7 +624,7 @@ body {
 }
 
 .modal-container-close {
-    display: none;
+    /* display: none; */
 }
 
 .modal {
@@ -672,7 +701,8 @@ body {
     padding: 12px 20px;
     box-sizing: border-box;
     color: #000000;
-    background-color: #F2F2F2;
+    background: #F2F2F2 url("../images/calendar.svg") no-repeat ;
+    background-position: right 14px center;
     border: none;
     border-radius: 4px;
 }
@@ -683,7 +713,7 @@ body {
 
 .auth-form-field:focus {
     background: #F2F2F2;
-    border: 2px solid #000000;
+    outline: 2px solid #000000;
 }
 
 .auth-form-span {
@@ -736,11 +766,19 @@ body {
 }
 
 .field-number {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
     width: 31px;
     text-align: center;
     border: none;
     border-radius: 0;
     padding: 12px 10px;
+    box-sizing: border-box;
+    color: #000000;
+    background: #F2F2F2;
 }
 
 .field-number::-webkit-outer-spin-button,
@@ -753,38 +791,26 @@ body {
     width: 40px;
     height: 48px;
     padding: 0;
+    background: #F2F2F2;
     border: none;
     cursor: pointer;
     border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
 }
 
-.button-reduce {
-    color: #756157;
-    border-radius: 4px 0 0 4px;
-}
-
-.button-minus:hover,
-.button-plus:hover {
-   color: #000000;
-
-}
-
-.button-minus:focus,
-.button-plus:focus {
-    color: #000000;
+.auth-form-button:focus {
     outline: 3px solid #82B3D3;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
 }
 
-.button-minus:active,
-.button-plus:active {
+.button-minus-icon:hover,
+.button-plus-icon:hover {
+    background: #000000;
+}
+
+.button-minus-icon:active,
+.button-plus-icon:active {
     opacity: 0.2;
-}
-
-
-.button-add {
-    color: #756157;
-    border-radius: 0 4px 4px 0;
 }
 
 .modal-find-link {
@@ -831,11 +857,16 @@ body {
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 15px 18px 18px 22px;
-    /* display: none; */
+    display: none;
     min-width: 216px;
     position: absolute;
     left: -116px;
     top: 41px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .tooltip-text:after {
