@@ -1014,6 +1014,14 @@ body {
     list-style-type: none;
 }
 
+.filter-hotel-item:hover {
+    opacity: 0.6;
+}
+
+.filter-hotel-item:active {
+    opacity: 0.3;
+}
+
 .filter-hotel-control:not(.filter-hotel-control-price) {
     display: block;
     font-size: 18px;
@@ -1033,6 +1041,16 @@ body {
     top: 1px;
     background: #ffffff;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.control-mark:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.control-mark:active {
+
 }
 
 .control-mark-checked {
@@ -1047,6 +1065,7 @@ body {
     top: 1px;
     background: #ffffff;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .control-mark-radio-checked {
