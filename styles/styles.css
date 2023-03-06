@@ -803,6 +803,15 @@ body {
     border-radius: 4px;
 }
 
+.button-minus {
+    position: relative;
+}
+
+.button-minus-icon {
+    position: absolute;
+    bottom: 1px;
+}
+
 .button-minus-icon:hover,
 .button-plus-icon:hover {
     background: #000000;
