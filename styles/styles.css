@@ -752,7 +752,7 @@ body {
 }
 
 .button-minus:hover,
-.button-plus:hover::placeholder {
+.button-plus:hover {
    color: #000000;
 
 }
@@ -1007,6 +1007,10 @@ body {
     margin-bottom: 48px;
 }
 
+.filter-hotel-control-price {
+    position: relative;
+}
+
 .range-input {
     width: 143px;
     padding: 12px 20px;
@@ -1033,17 +1037,26 @@ body {
 }
 
 .range-input:hover {
-    background: #E6E6E6;
+    background-color: #E6E6E6;
 }
 
 .range-input:focus {
-    background: #F2F2F2;
+    background-color: #F2F2F2;
     outline: 2px solid #000000;
 }
 
-/* .range-span {
-    text-align: end;
-} */
+.range-span {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    opacity: 0.3;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
 
 .range-scale {
     position: relative;
