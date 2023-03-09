@@ -854,6 +854,10 @@ body {
     border-radius: 4px;
 }
 
+.auth-form-button:active {
+
+}
+
 .button-minus-icon:hover,
 .button-plus-icon:hover {
     background: #000000;

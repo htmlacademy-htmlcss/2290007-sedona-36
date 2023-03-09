@@ -183,27 +183,21 @@
                 <span class="auth-form-span auth-form-span-departure">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <div class="control-group">
-                <p class="field-group-adults">
-
+                <div class="field-group-adults">
                   <label class="auth-form-label form-label" for="adults">Взрослые:</label>
                   <div class="container-field">
                     <button class="auth-form-button button-reduce" type="button">
-                      <span class="button-minus">
-                        <img class="button-minus-icon" src="images/minus.svg" width="14" height="2" alt="Знак минус.">
-                      </span>
+                      <img class="button-minus-icon" src="images/minus.svg" width="14" height="2" alt="Знак минус.">
                       <span class="visually-hidden">Уменьшить</span>
                     </button>
                     <input class="field-number" type="number" id="adults" name="adults" value="2" required>
                     <button class="auth-form-button button-add" type="button">
-                      <span class="button-plus">
-                        <img class="button-plus-icon" src="images/plus.svg" width="14" height="14" alt="Знак плюс.">
-                      </span>
+                      <img class="button-plus-icon" src="images/plus.svg" width="14" height="14" alt="Знак плюс.">
                       <span class="visually-hidden">Увеличить</span>
                     </button>
                   </div>
-
-                </p>
-                <p class="field-group-children">
+                </divv>
+                <div class="field-group-children">
                   <label class="auth-form-label form-label" for="children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
@@ -211,20 +205,18 @@
                     </button>
                     <span class="tooltip-text"  role="tooltip" id="tooltip-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
-                  <button class="auth-form-button button-reduce" type="button">
-                    <span class="button-minus">
+                  <div class="container-field">
+                    <button class="auth-form-button button-reduce" type="button">
                       <img class="button-minus-icon" src="images/minus.svg" width="14" height="2" alt="Знак минус.">
-                    </span>
-                    <span class="visually-hidden">Уменьшить</span>
-                  </button>
-                  <input class="field-number" type="number" id="children" name="children" value="2" required>
-                  <button class="auth-form-button button-add" type="button">
-                    <span class="button-plus">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <input class="field-number" type="number" id="children" name="children" value="2" required>
+                    <button class="auth-form-button button-add" type="button">
                       <img class="button-plus-icon" src="images/plus.svg" width="14" height="14" alt="Знак плюс.">
-                    </span>
-                    <span class="visually-hidden">Увеличить</span>
-                  </button>
-                </p>
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </div>
+                </div>
               </div>
               <a class="modal-find-link" href="#">Найти</a>
             </form>
