@@ -95,6 +95,20 @@ body {
     position: relative;
 }
 
+.navigation-link:hover {
+    background-color: #756157;
+}
+
+.navigation-link:focus {
+    background-color: #756157;
+    outline: 3px solid #83B3D3;
+    z-index: 1;
+}
+
+.navigation-link:active {
+    background-color: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-link-current::after {
     content: "";
     position: absolute;
@@ -132,11 +146,37 @@ body {
     background: url("../images/search.svg") no-repeat center;
 }
 
+.navigation-link-search:hover {
+    background-color: #756157;
+}
+
+.navigation-link-search:focus {
+    background-color: #756157;
+    outline: 3px solid #83B3D3;
+}
+
+.navigation-link-search:active {
+    background-color: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-link-heart {
-    padding: 24px 13px 23px;
+    padding: 22px 12px;
     text-decoration: none;
     color: #000000;
     background: url("../images/heart.svg") no-repeat center;
+}
+
+.navigation-link-heart:hover {
+    background-color: #756157;
+}
+
+.navigation-link-heart:focus {
+    background-color: #756157;
+    outline: 3px solid #83B3D3;
+}
+
+.navigation-link-heart:active {
+    background-color: rgba(117, 97, 87, 0.3);
 }
 
 .quantity-selected {
@@ -754,7 +794,7 @@ body {
 
 .control-group {
     display: grid;
-    grid-template-columns: 247px 247px;
+    grid-template-columns: 247px 242px;
     gap: 88px;
     margin-bottom: 66px;
 }
@@ -1051,8 +1091,8 @@ body {
     cursor: pointer;
 }
 
-.control-mark:focus {
-    border: 3px solid #83B3D3;
+.control-input + .control-mark:focus {
+    outline: 3px solid #83B3D3;
     border-radius: 4px;
 }
 
