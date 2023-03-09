@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   </head>
   <body>
     <div class="page-container">
@@ -64,25 +65,25 @@
             </li>
             <li class="advantages-item advantages-item-square">
               <div class="advantages-item-container">
-                <h4 class="advantage-subtitle">Небольшая площадь</h4>
+                <h4 class="advantage-subtitle advantage-subtitle-square">Небольшая площадь</h4>
                 <p class="advantage-description">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
             <li class="advantages-item advantages-item-road">
               <div class="advantages-item-container">
-                <h4 class="advantage-subtitle">Красивая дорога</h4>
+                <h4 class="advantage-subtitle advantage-subtitle-road">Красивая дорога</h4>
                 <p class="advantage-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages-item advantages-item-tourists">
               <div class="advantages-item-container">
-                <h4 class="advantage-subtitle">Мало туристов</h4>
+                <h4 class="advantage-subtitle advantage-subtitle-tourists">Мало туристов</h4>
                 <p class="advantage-description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
             <li class="advantages-item advantages-item-bridge">
               <div class="advantages-item-wrapper">
-                <h4 class="advantage-subtitle advantage-subtitle-bridge">Там есть мост дьявола</h4>
+                <h4 class="advantage-subtitle advantage-subtitle-bridge">Там есть<br>мост дьявола</h4>
                 <p class="advantage-description advantage-description-bridge">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <img class="picture-canyon" src="images/canyon.jpg" width="800" height="385" alt="Каньон.">
@@ -94,17 +95,17 @@
             <li class="advantages-item advantages-item-housing">
               <img class="icon-housing" src="images/housing.svg" width="76" height="72" alt="Жилье.">
               <h4 class="advantage-subtitle advantage-subtitle-housing">Жильё</h4>
-              <p class="advantage-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="advantage-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
             </li>
             <li class="advantages-item">
               <img class="icon-food" src="images/food.svg" width="75" height="70" alt="Еда.">
               <h4 class="advantage-subtitle advantage-subtitle-food">Еда</h4>
-              <p class="advantage-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantage-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
             <li class="advantages-item advantages-item-souvenirs">
               <img class="icon-souvenirs" src="images/souvenirs.svg" width="65" height="76" alt="Сувениры.">
               <h4 class="advantage-subtitle advantage-subtitle-souvenirs">Сувениры</h4>
-              <p class="advantage-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="advantage-description">Не только китайского,<br>но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -163,6 +164,65 @@
           </div>
         </div>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="get">
+              <p class="field-group">
+                <label class="auth-form-label" for="arrival-date">Дата заезда:</label>
+                <input class="auth-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату" required>
+                <span class="auth-form-span auth-form-span-arrival">Мы не можем отправить вас в прошлое.</span>
+              </p>
+              <p class="field-group">
+                <label class="auth-form-label form-label" for="departure-date">Дата выезда:</label>
+                <input class="auth-form-field" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату" required>
+                <span class="auth-form-span auth-form-span-departure">На эти даты есть свободные номера. Пока есть.</span>
+              </p>
+              <div class="control-group">
+                <div class="field-group-adults">
+                  <label class="auth-form-label form-label" for="adults">Взрослые:</label>
+                  <div class="container-field">
+                    <button class="auth-form-button button-reduce" type="button">
+                      <img class="button-minus-icon" src="images/minus.svg" width="14" height="2" alt="Знак минус.">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <input class="field-number" type="number" id="adults" name="adults" value="2" required>
+                    <button class="auth-form-button button-add" type="button">
+                      <img class="button-plus-icon" src="images/plus.svg" width="14" height="14" alt="Знак плюс.">
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="field-group-children">
+                  <label class="auth-form-label form-label" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12"><path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <span class="tooltip-text"  role="tooltip" id="tooltip-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                  <div class="container-field">
+                    <button class="auth-form-button button-reduce" type="button">
+                      <img class="button-minus-icon" src="images/minus.svg" width="14" height="2" alt="Знак минус.">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <input class="field-number" type="number" id="children" name="children" value="2" required>
+                    <button class="auth-form-button button-add" type="button">
+                      <img class="button-plus-icon" src="images/plus.svg" width="14" height="14" alt="Знак плюс.">
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <a class="modal-find-link" href="#">Найти</a>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
