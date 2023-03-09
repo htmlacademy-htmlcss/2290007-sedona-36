@@ -35,6 +35,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    min-width: 1280px;
     min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
@@ -60,6 +61,7 @@ body {
 .logo-sedona {
     display: block;
     position: absolute;
+    z-index: 1;
 }
 
 .navigation {
@@ -91,6 +93,20 @@ body {
     text-decoration: none;
     color: #000000;
     position: relative;
+}
+
+.navigation-link:hover {
+    background-color: #756157;
+}
+
+.navigation-link:focus {
+    background-color: #756157;
+    outline: 3px solid #83B3D3;
+    z-index: 1;
+}
+
+.navigation-link:active {
+    background-color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link-current::after {
@@ -130,11 +146,37 @@ body {
     background: url("../images/search.svg") no-repeat center;
 }
 
+.navigation-link-search:hover {
+    background-color: #756157;
+}
+
+.navigation-link-search:focus {
+    background-color: #756157;
+    outline: 3px solid #83B3D3;
+}
+
+.navigation-link-search:active {
+    background-color: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-link-heart {
-    padding: 24px 13px 23px;
+    padding: 22px 12px;
     text-decoration: none;
     color: #000000;
     background: url("../images/heart.svg") no-repeat center;
+}
+
+.navigation-link-heart:hover {
+    background-color: #756157;
+}
+
+.navigation-link-heart:focus {
+    background-color: #756157;
+    outline: 3px solid #83B3D3;
+}
+
+.navigation-link-heart:active {
+    background-color: rgba(117, 97, 87, 0.3);
 }
 
 .quantity-selected {
@@ -154,6 +196,7 @@ body {
 
 .navigation-user .navigation-link-button {
     display: inline-block;
+    font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
@@ -329,7 +372,9 @@ body {
     margin: 112.5px 112.5px 62px;
 }
 
-.advantage-subtitle::after {
+.advantage-subtitle-square::after,
+.advantage-subtitle-road::after,
+.advantage-subtitle-tourists::after {
     content: "";
     position: absolute;
     top: 85px;
@@ -371,7 +416,7 @@ body {
     line-height: 21px;
     font-weight: 400;
     color: #333333;
-    margin: 0 85px 81px;
+    margin: 0 85px 112px;
 }
 
 .advantage-description-town,
@@ -391,7 +436,7 @@ body {
 }
 
 .search {
-    padding-top: 96px;
+    padding-top: 60px;
     padding-bottom: 96px;
 }
 
@@ -485,7 +530,7 @@ body {
 
 .subscribe-button {
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
@@ -521,7 +566,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 1060px;
-    padding:  40px 70px 30px;
+    padding:  42px 70px 30px;
 }
 
 .footer-social {
@@ -595,6 +640,7 @@ body {
 .footer-logo {
     display: block;
     width: 115px;
+    padding-top: 3px;
 }
 
 .logo-htmlacademy {
@@ -748,7 +794,7 @@ body {
 
 .control-group {
     display: grid;
-    grid-template-columns: 247px 247px;
+    grid-template-columns: 247px 242px;
     gap: 88px;
     margin-bottom: 66px;
 }
@@ -924,7 +970,7 @@ body {
     min-width: 114px;
     box-sizing: border-box;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     padding: 0;
     list-style-type: none;
     color: #ffffff;
@@ -974,7 +1020,7 @@ body {
 
 .filter-hotel-form {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
 }
 
@@ -1010,6 +1056,7 @@ body {
     flex-wrap: wrap;
     gap: 16px;
     margin: 0;
+    margin-bottom: 16px;
     padding: 0;
     list-style-type: none;
 }
@@ -1044,8 +1091,8 @@ body {
     cursor: pointer;
 }
 
-.control-mark:focus {
-    border: 3px solid #83B3D3;
+.control-input + .control-mark:focus {
+    outline: 3px solid #83B3D3;
     border-radius: 4px;
 }
 
@@ -1075,7 +1122,7 @@ body {
 .range-wrapper-inputs {
     display: flex;
     gap: 2px;
-    margin-bottom: 48px;
+    margin-bottom: 42px;
 }
 
 .filter-hotel-control-price {
@@ -1085,6 +1132,7 @@ body {
 .range-input {
     width: 143px;
     padding: 12px 20px;
+    padding-right: 40px;
     box-sizing: border-box;
     background: #F2F2F2;
     border: none;
@@ -1181,7 +1229,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-top: 66px;
+    margin-top: 52px;
     margin-left: auto;
 }
 
@@ -1239,7 +1287,7 @@ body {
 }
 
 .select-control {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     font-weight: 400;
     color: #333333;
@@ -1280,7 +1328,8 @@ body {
     display: block;
     width: 48px;
     height: 48px;
-    border: none;
+    outline: 2px solid #E5E5E5;
+    border-radius: 4px;
 }
 
 .sorting-link-button:hover {
@@ -1304,6 +1353,7 @@ body {
 
 .link-button-table {
     background: url("../images/table.svg") no-repeat center;
+    outline: 2px solid #000000;
 }
 
 .link-button-slideshow {
@@ -1315,29 +1365,22 @@ body {
 }
 
 .hotels-list {
-    /* display: flex;
-    flex-wrap: wrap;
-    width: 1060px;
-    margin: 0 auto;
-    margin-bottom: 60px;
-    padding: 0;
-    list-style-type: none; */
+
     width: 1060px;
     display: grid;
     grid-template-columns: repeat(3, 340px);
     gap: 20px;
     list-style-type: none;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     padding: 0;
 }
 
 .hotel-card {
-    /* width: 340px;
-    margin-bottom: 20px;
-    margin-right: 20px; */
     display: flex;
     flex-direction: column;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
 }
 
 .hotel-card-content {
@@ -1345,10 +1388,6 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-}
-
-.hotel-card:nth-child(3n) {
-    /* margin-right: 0; */
 }
 
 .hotel-card-title-link {
@@ -1360,7 +1399,8 @@ body {
     line-height: 28px;
     font-weight: 700;
     color: #000000;
-    margin: 16px 0;
+    margin: 10px 0;
+    margin-bottom: 16px;
 }
 
 .hotel-card-description {
@@ -1427,7 +1467,8 @@ body {
 }
 
 .hotel-card-button-favorites-inner {
-    background: #7DB54F;;
+    background: #7DB54F;
+    padding: 8px 10px;
 }
 
 .hotel-card-button-favorites:hover {
@@ -1454,6 +1495,7 @@ body {
 .hotel-card-stars-rating-description {
     display: flex;
     align-items: center;
+    gap: 6px;
     width: 140px;
     padding: 10px 0;
 }
@@ -1478,6 +1520,7 @@ body {
 
 .pagination-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -1486,6 +1529,7 @@ body {
 
 .pagination-item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .pagination-link {
@@ -1540,7 +1584,7 @@ body {
 .subscription-catalog {
     width: 100%;
     box-sizing: border-box;
-    padding-top: 96px;
+    padding-top: 90px;
     background: none;
 }
 
