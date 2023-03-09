@@ -812,6 +812,9 @@ body {
 }
 
 .container-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 110px;
     background: #F2F2F2;
 }
