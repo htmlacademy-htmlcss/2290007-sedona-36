@@ -106,8 +106,7 @@ body {
 
 .navigation-link:focus {
     background-color: #756157;
-    outline: 3px solid #83B3D3;
-    z-index: 1;
+    outline: none;
 }
 
 .navigation-link:active {
@@ -151,16 +150,19 @@ body {
     background: url("../images/search.svg") no-repeat center;
 }
 
-.navigation-link-search:hover {
+.navigation-link-search:hover,
+.navigation-link-heart:hover {
     background-color: #756157;
 }
 
-.navigation-link-search:focus {
+.navigation-link-search:focus,
+.navigation-link-heart:focus {
     background-color: #756157;
-    outline: 3px solid #83B3D3;
+    outline: none;
 }
 
-.navigation-link-search:active {
+.navigation-link-search:active,
+.navigation-link-heart:active {
     background-color: rgba(117, 97, 87, 0.3);
 }
 
@@ -169,19 +171,6 @@ body {
     text-decoration: none;
     color: #000000;
     background: url("../images/heart.svg") no-repeat center;
-}
-
-.navigation-link-heart:hover {
-    background-color: #756157;
-}
-
-.navigation-link-heart:focus {
-    background-color: #756157;
-    outline: 3px solid #83B3D3;
-}
-
-.navigation-link-heart:active {
-    background-color: rgba(117, 97, 87, 0.3);
 }
 
 .quantity-selected {
@@ -222,7 +211,7 @@ body {
 }
 
 .navigation-link-button:focus {
-    outline: 3px solid #83B3D3;
+    outline: none;
 }
 
 .navigation-link-button:active {
@@ -480,7 +469,7 @@ body {
 }
 
 .search-link-button:focus {
-    outline: 3px solid #83B3D3;
+    outline: none;
 }
 
 .search-link-button:active {
@@ -555,7 +544,7 @@ body {
 }
 
 .subscribe-button:focus {
-    outline: 3px solid #83B3D3;
+    outline: none;
 }
 
 .subscribe-button:active {
@@ -1186,10 +1175,6 @@ body {
     border-radius: 17px;
 }
 
-.control-mark-radio:active {
-
-}
-
 .control-mark-radio-checked {
     background: #ffffff url("../images/radio-mark.svg") no-repeat center;
 }
@@ -1237,7 +1222,7 @@ body {
     color:#000000;
   }
 
-.range-input:focus-within {
+.range-input:focus {
     background: #E6E6E6;
     outline: 3px solid #83B3D3;
   }
@@ -1352,6 +1337,10 @@ body {
 
 .filter-hotel-button:focus {
     outline: 3px solid #83B3D3;
+}
+
+.button-blue:focus {
+    outline:none;
 }
 
 .filter-hotel-button:active {
@@ -1534,7 +1523,7 @@ body {
 }
 
 .hotel-card-link-button-more:focus {
-    outline: 3px solid #83B3D3;
+    outline: none;
 }
 
 .hotel-card-link-button-more:active {
@@ -1571,7 +1560,7 @@ body {
 }
 
 .hotel-card-button-favorites:focus {
-    outline: 3px solid #83B3D3;
+    outline: none;
 }
 
 .hotel-card-button-favorites:active {
@@ -1668,12 +1657,17 @@ body {
 
 .pagination-link:focus:not(.pagination-link-current):not(.pagination-link-points)  {
     background: #68A2CA;
-    outline: 1px solid #82B3D3;
+    outline: none;
 }
 
 .pagination-link:active:not(.pagination-link-current):not(.pagination-link-points)  {
     color: rgba(255, 255, 255, 0.3);
     background: #82B3D3;
+}
+
+.pagination-link-current:focus,
+.pagination-link-points {
+    outline: none;
 }
 
 .subscription-catalog {
