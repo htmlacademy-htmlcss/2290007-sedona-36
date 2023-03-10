@@ -715,7 +715,7 @@ body {
 }
 
 .modal-title {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-size: 30px;
     line-height: 36px;
@@ -727,7 +727,7 @@ body {
 }
 
 .auth-form-label {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-size: 20px;
     line-height: 24px;
@@ -739,7 +739,7 @@ body {
 }
 
 .auth-form-field {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 24px;
@@ -781,7 +781,7 @@ body {
 }
 
 .auth-form-span {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 21px;
@@ -847,7 +847,7 @@ body {
 }
 
 .field-number {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 24px;
@@ -919,7 +919,7 @@ body {
 }
 
 .modal-find-link {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-size: 20px;
     line-height: 24px;
@@ -970,7 +970,7 @@ body {
 }
 
 .tooltip-text {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 20px;
@@ -1259,7 +1259,7 @@ body {
 }
 
 .range-span {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 24px;
