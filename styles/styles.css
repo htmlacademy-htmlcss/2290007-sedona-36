@@ -667,7 +667,7 @@ body {
 }
 
 .modal-container-close {
-    display: none;
+    /* display: none; */
 
 }
 
@@ -691,7 +691,10 @@ body {
     width: 52px;
     height: 52px;
     padding: 0;
-    background: #F2F2F2 url("../images/modal-close-button.svg") no-repeat center;
+    background-color: #F2F2F2;
+    background-image: url("../images/modal-close-button.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -707,7 +710,7 @@ body {
 }
 
 .modal-close-button:active {
-    background: #E6E6E6;
+    background-color: #E6E6E6;
     opacity: 0.3;
 }
 
