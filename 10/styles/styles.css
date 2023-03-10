@@ -663,11 +663,12 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(242, 242, 242, 0.8);
+    z-index: 1;
 }
 
 .modal-container-close {
-    display: none;
-    z-index: 1;
+    /* display: none; */
+
 }
 
 .modal {
@@ -690,7 +691,10 @@ body {
     width: 52px;
     height: 52px;
     padding: 0;
-    background: #F2F2F2 url("../images/modal-close-button.svg") no-repeat center;
+    background-color: #F2F2F2;
+    background-image: url("../images/modal-close-button.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -706,7 +710,7 @@ body {
 }
 
 .modal-close-button:active {
-    background: #E6E6E6;
+    background-color: #E6E6E6;
     opacity: 0.3;
 }
 
@@ -819,6 +823,10 @@ body {
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
+}
+
+.auth-form-label {
+    width: 137px;
 }
 
 .form-label {
@@ -948,7 +956,9 @@ body {
 .tooltip-toggle {
     display: block;
     margin: 0;
-    padding: 7px 12px;
+    width: 26px;
+    height: 26px;
+    /* padding: 7px 12px; */
     background-color: #83B3D3;
     border: none;
     border-radius: 50%;
@@ -970,7 +980,7 @@ body {
     display: none;
     min-width: 216px;
     position: absolute;
-    left: -116px;
+    left: -114px;
     top: 41px;
 }
 
