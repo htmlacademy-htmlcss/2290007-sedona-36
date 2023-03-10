@@ -879,8 +879,14 @@ body {
 
 .button-reduce {
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 12px;
+}
+
+.minus-icon {
+    position: absolute;
+    right: 3px;
+    top: 8px;
 }
 
 .button-add {
