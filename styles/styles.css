@@ -27,6 +27,11 @@
     overflow: hidden;
   }
 
+  img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
 html {
     height: 100%;
 }
@@ -674,6 +679,7 @@ body {
 
 .modal-container-close {
     /* display: none; */
+    z-index: 1;
 }
 
 .modal {
@@ -749,19 +755,26 @@ body {
     padding: 12px 20px;
     box-sizing: border-box;
     color: #000000;
-    background: #F2F2F2 url("../images/calendar.svg") no-repeat ;
+    background-color: #F2F2F2;
+    background-image: url("../images/calendar.svg");
+    background-repeat: no-repeat;
     background-position: right 14px center;
     border: none;
     border-radius: 4px;
 }
 
 .auth-form-field:hover {
-    background: #E6E6E6;
+    background-color: #E6E6E6;
 }
 
 .auth-form-field:focus {
-    background: #F2F2F2;
+    background-color: #F2F2F2;
     outline: 2px solid #000000;
+}
+
+:focus:not(:placeholder-shown) {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
 }
 
 .auth-form-span {
@@ -902,6 +915,22 @@ body {
     background: #83B3D3;
     border-radius: 10px;
 }
+
+.modal-find-link:hover {
+    background: #68A2CA;
+
+}
+
+.modal-find-link:focus {
+    background: #68A2CA;
+
+}
+
+.modal-find-link:active {
+    background: #68A2CA;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 
 .tooltip {
     position: absolute;
