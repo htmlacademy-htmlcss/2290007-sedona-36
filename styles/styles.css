@@ -743,6 +743,7 @@ body {
     align-items: center;
     text-transform: capitalize;
     color: #000000;
+    width: 91px;
 }
 
 .auth-form-field {
