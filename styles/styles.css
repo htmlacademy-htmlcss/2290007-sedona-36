@@ -812,6 +812,7 @@ body {
 }
 
 .container-field {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -858,17 +859,31 @@ body {
 }
 
 .auth-form-button:active {
-
-}
-
-.button-minus-icon:hover,
-.button-plus-icon:hover {
-    background: #000000;
-}
-
-.button-minus-icon:active,
-.button-plus-icon:active {
     opacity: 0.2;
+}
+
+.button-reduce {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+
+.button-add {
+    position: absolute;
+    top: 15px;
+    right: 9px;
+}
+
+.minus-icon,
+.plus-icon {
+    fill: #756157;
+    opacity: 0.3;
+}
+
+.minus-icon:hover,
+.plus-icon:hover {
+    fill: #000000;
+    opacity: 1;
 }
 
 .modal-find-link {
