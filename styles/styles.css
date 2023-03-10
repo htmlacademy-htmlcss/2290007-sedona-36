@@ -751,7 +751,7 @@ body {
     background-color: #F2F2F2;
     background-image: url("../images/calendar.svg");
     background-repeat: no-repeat;
-    background-position: right 14px center;
+    background-position: right 20px center;
     border: none;
     border-radius: 4px;
 }
@@ -831,6 +831,10 @@ body {
 
 .form-label {
     margin-right: auto;
+}
+
+.form-label-children {
+    width: 49px;
 }
 
 .container-field {
