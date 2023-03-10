@@ -515,7 +515,6 @@ body {
 
 .subscription-form {
     display: flex;
-    flex-wrap: wrap;
     max-width: 684px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -678,7 +677,7 @@ body {
 }
 
 .modal-container-close {
-    /* display: none; */
+    display: none;
     z-index: 1;
 }
 
