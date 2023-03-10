@@ -667,7 +667,7 @@ body {
 }
 
 .modal-container-close {
-    display: none;
+    /* display: none; */
 
 }
 
@@ -825,6 +825,10 @@ body {
     margin: 0;
 }
 
+.auth-form-label {
+    width: 137px;
+}
+
 .form-label {
     margin-right: auto;
 }
@@ -952,7 +956,9 @@ body {
 .tooltip-toggle {
     display: block;
     margin: 0;
-    padding: 7px 12px;
+    width: 26px;
+    height: 26px;
+    /* padding: 7px 12px; */
     background-color: #83B3D3;
     border: none;
     border-radius: 50%;
@@ -974,7 +980,7 @@ body {
     display: none;
     min-width: 216px;
     position: absolute;
-    left: -116px;
+    left: -114px;
     top: 41px;
 }
 
