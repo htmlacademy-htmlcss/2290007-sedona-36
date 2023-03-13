@@ -101,12 +101,7 @@ body {
 }
 
 .navigation-link:hover {
-    background-color: #756157;
-}
-
-.navigation-link:focus {
-    background-color: #756157;
-    outline: none;
+    background-color: #E5E5E5;
 }
 
 .navigation-link:active {
@@ -152,13 +147,7 @@ body {
 
 .navigation-link-search:hover,
 .navigation-link-heart:hover {
-    background-color: #756157;
-}
-
-.navigation-link-search:focus,
-.navigation-link-heart:focus {
-    background-color: #756157;
-    outline: none;
+    background-color: #E5E5E5;
 }
 
 .navigation-link-search:active,
