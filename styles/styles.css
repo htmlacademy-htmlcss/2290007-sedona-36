@@ -667,7 +667,7 @@ body {
 }
 
 .modal-container-close {
-    /* display: none; */
+    display: none;
 
 }
 
@@ -1582,7 +1582,7 @@ body {
 }
 
 .hotel-card-button-favorites:disabled {
-    opacity: 0.1;
+    background-color: #E5E5E5;
 }
 
 .hotel-card-stars-rating {
