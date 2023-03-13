@@ -197,7 +197,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    background: #756157;
+    background-color: #756157;
     width: 160px;
     box-sizing: border-box;
     min-height: 20px;
@@ -207,19 +207,17 @@ body {
 }
 
 .navigation-link-button:hover {
-    opacity: 0.6;
+    background: #615048;
 }
 
 .navigation-link-button:focus {
+    background-color: #615048;
     outline: none;
 }
 
 .navigation-link-button:active {
+    background-color: #756157;
     color: rgba(255, 255, 255, 0.3);
-}
-
-.navigation-link-button:disabled {
-    opacity: 0.1;
 }
 
 .main-container {
@@ -461,23 +459,21 @@ body {
     color: #ffffff;
     padding: 8px 50px;
     border-radius: 4px;
-    background: #756157;
+    background-color: #756157;
 }
 
 .search-link-button:hover {
-    opacity: 0.6;
+    background-color: #615048;
 }
 
 .search-link-button:focus {
+    background-color: #615048;
     outline: none;
 }
 
 .search-link-button:active {
+    background-color: #756157;
     color: rgba(255, 255, 255, 0.3);
-}
-
-.search-link-button:disabled {
-    opacity: 0.1;
 }
 
 .subscription {
@@ -530,7 +526,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    background: #82B3D3;
+    background-color: #82B3D3;
     border: none;
     border-radius: 0px 4px 4px 0px;
     min-width: 232px;
@@ -540,19 +536,21 @@ body {
 }
 
 .subscribe-button:hover {
-    opacity: 0.6;
+    background-color: #68A2CA;
 }
 
 .subscribe-button:focus {
+    background-color: #68A2CA;
     outline: none;
 }
 
 .subscribe-button:active {
+    background-color: #82B3D3;
     color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe-button:disabled {
-    opacity: 0.1;
+    background: #E5E5E5;
 }
 
 .page-footer-container {
@@ -1342,11 +1340,15 @@ body {
 }
 
 .button-blue {
-    background: #82B3D3;
+    background-color: #82B3D3;
 }
 
-.filter-hotel-button:hover {
+.filter-hotel-button:hover:not(.button-blue) {
     opacity: 0.6;
+}
+
+.button-blue:hover {
+    background-color: #68A2CA;
 }
 
 .filter-hotel-button:focus {
@@ -1354,6 +1356,7 @@ body {
 }
 
 .button-blue:focus {
+    background-color: #68A2CA;
     outline:none;
 }
 
@@ -1361,8 +1364,17 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.filter-hotel-button:disabled {
+.button-blue:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-hotel-button:disabled:not(.button-blue) {
     opacity: 0.1;
+}
+
+.button-blue:disabled {
+    background-color: #E5E5E5;
 }
 
 .hotels-sorting {
@@ -1524,7 +1536,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    background: #756157;
+    background-color: #756157;
     border-radius: 4px;
     width: 140px;
     box-sizing: border-box;
@@ -1533,19 +1545,17 @@ body {
 }
 
 .hotel-card-link-button-more:hover {
-    opacity: 0.6;
+    background-color: #615048;
 }
 
 .hotel-card-link-button-more:focus {
+    background-color: #615048;
     outline: none;
 }
 
 .hotel-card-link-button-more:active {
+    background-color: #756157;
     color: rgba(255, 255, 255, 0.3);
-}
-
-.hotel-card-link-button-more:disabled {
-    opacity: 0.1;
 }
 
 .hotel-card-button-favorites {
@@ -1555,7 +1565,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    background: #82B3D3;
+    background-color: #82B3D3;
     border: none;
     border-radius: 4px;
     width: 140px;
@@ -1565,23 +1575,44 @@ body {
 }
 
 .hotel-card-button-favorites-inner {
-    background: #7DB54F;
+    background-color: #7DB54F;
     padding: 8px 10px;
 }
 
 .hotel-card-button-favorites:hover {
-    opacity: 0.6;
+    background-color: #68A2CA;
+    /* opacity: 0.6; */
+}
+
+.hotel-card-button-favorites-inner:hover {
+    background-color: #6C9E42;
 }
 
 .hotel-card-button-favorites:focus {
+    background-color: #68A2CA;
+    outline: none;
+}
+
+.hotel-card-button-favorites-inner:focus {
+    background-color: #6C9E42;
     outline: none;
 }
 
 .hotel-card-button-favorites:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-card-button-favorites-inner:active {
+    background-color: #7DB54F;
     color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-card-button-favorites:disabled {
+    background-color: #E5E5E5;
+}
+
+.hotel-card-button-favorites-inner:disabled {
     background-color: #E5E5E5;
 }
 
