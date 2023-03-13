@@ -667,7 +667,7 @@ body {
 }
 
 .modal-container-close {
-    display: none;
+    /* display: none; */
 
 }
 
@@ -1632,7 +1632,7 @@ body {
 
 .pagination-link {
     display: inline-block;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     padding: 12px 25px 13px 24px;
     box-sizing: border-box;
