@@ -665,7 +665,7 @@ body {
 }
 
 .modal-container-close {
-    display: none;
+    /* display: none; */
 
 }
 
@@ -812,7 +812,7 @@ body {
     display: grid;
     grid-template-columns: 247px 242px;
     gap: 88px;
-    margin-bottom: 66px;
+    margin-bottom: 47px;
 }
 
 .field-group-adults,
@@ -916,7 +916,7 @@ body {
     opacity: 1;
 }
 
-.modal-find-link {
+/* .modal-find-link {
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-size: 20px;
@@ -927,7 +927,7 @@ body {
     text-decoration: none;
     padding: 18px 256px;
     color: #ffffff;
-    background: #83B3D3;
+    background-color: #83B3D3;
     border-radius: 10px;
 }
 
@@ -945,8 +945,39 @@ body {
 .modal-find-link:active {
     background: #68A2CA;
     color: rgba(255, 255, 255, 0.3);
+} */
+
+.modal-find-button {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 18px 256px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
+.modal-find-button:hover {
+    background-color: #68A2CA;
+
+}
+
+.modal-find-button:focus {
+    background-color: #68A2CA;
+    outline: none;
+
+}
+
+.modal-find-button:active {
+    background: #68A2CA;
+    color: rgba(255, 255, 255, 0.3);
+}
 
 .tooltip {
     position: absolute;
