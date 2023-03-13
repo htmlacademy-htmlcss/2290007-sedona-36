@@ -1173,7 +1173,7 @@ body {
     height: 20px;
     left: 0;
     top: 1px;
-    background: #ffffff;
+    background-color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -1183,12 +1183,11 @@ body {
     border-radius: 4px;
 }
 
-.control-mark:active {
-
-}
-
-.control-mark-checked {
-    background: #ffffff url("../images/checkbox-mark.svg") no-repeat center;
+.control-input:checked + .control-mark {
+    background-color: #ffffff;
+    background-image: url("../images/checkbox-mark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .control-mark-radio {
@@ -1197,7 +1196,7 @@ body {
     height: 20px;
     left: 0;
     top: 1px;
-    background: #ffffff;
+    background-color: #ffffff;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -1207,8 +1206,11 @@ body {
     border-radius: 17px;
 }
 
-.control-mark-radio-checked {
-    background: #ffffff url("../images/radio-mark.svg") no-repeat center;
+.control-input:checked + .control-mark-radio {
+    background-color: #ffffff;
+    background-image: url("../images/radio-mark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .range-wrapper-inputs {
