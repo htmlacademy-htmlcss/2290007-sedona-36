@@ -905,37 +905,6 @@ body {
     opacity: 1;
 }
 
-/* .modal-find-link {
-    font-family: 'PT Sans', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 18px 256px;
-    color: #ffffff;
-    background-color: #83B3D3;
-    border-radius: 10px;
-}
-
-.modal-find-link:hover {
-    background-color: #68A2CA;
-
-}
-
-.modal-find-link:focus {
-    background-color: #68A2CA;
-    outline: none;
-
-}
-
-.modal-find-link:active {
-    background: #68A2CA;
-    color: rgba(255, 255, 255, 0.3);
-} */
-
 .modal-find-button {
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
